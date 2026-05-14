@@ -8,7 +8,7 @@ Prioritize clarity, storytelling, and privacy-safe presentation.
 - Focus: Show the connection between user needs, design decisions, and technical execution.
 - Privacy: Never expose confidential data, internal names, or sensitive assets. Prefer anonymized and abstracted examples.
 - Language: All user-facing copy must be in English.
-- Tone: Clear, concise, professional, friendly and approachable.
+- Tone: Clear, concise, professional, friendly and approachable. The overall impression should be: capable, thoughtful, structured, human-centered, and technically promising.
 
 ## Content Principles
 
