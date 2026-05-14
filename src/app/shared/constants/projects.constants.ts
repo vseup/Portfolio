@@ -58,6 +58,12 @@ export const PROJECTS: ProjectData[] = [
     tags: ['Arduino C/C++', 'UX Research', 'Interactive Prototyping'],
     toneClass: 'tone-violet',
     detailsRoute: '/',
+    previewImage: {
+      src: '/images/projects/magic-glove/magic-glove-preview.jpg',
+      alt: 'Smart gesture-control glove in the foreground and signal markers on connected appliances in the kitchen background.',
+      width: 1280,
+      height: 856,
+    },
   },
   {
     area: 'Service Design',
@@ -68,6 +74,12 @@ export const PROJECTS: ProjectData[] = [
     tags: ['UX Design', 'UX Research', 'Prototyping'],
     toneClass: 'tone-mint',
     detailsRoute: '/',
+    previewImage: {
+      src: '/images/projects/cura/cura-preview.jpg',
+      alt: 'Smartphone screen showing the Cura care-assistant chat interface.',
+      width: 1280,
+      height: 842,
+    },
   },
 ];
 
