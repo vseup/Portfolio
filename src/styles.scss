@@ -76,10 +76,32 @@ body {
   min-height: 100%;
 }
 
+p,
+ul,
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
 body {
   font-family: var(--font-family-base);
   line-height: var(--text-line-height-default);
   font-size: var(--text-size-md);
   color: var(--color-text-primary);
   background: var(--color-bg-canvas);
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
 }
