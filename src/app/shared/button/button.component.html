@@ -1,0 +1,24 @@
+@if (routerLink(); as link) {
+  <a
+    class="button"
+    [class.button-primary]="variant() === 'primary'"
+    [class.button-ghost]="variant() === 'ghost'"
+    [routerLink]="link"
+    [fragment]="fragment()"
+    [attr.aria-label]="ariaLabel() ?? null"
+  >
+    <ng-content></ng-content>
+  </a>
+} @else {
+  <a
+    class="button"
+    [class.button-primary]="variant() === 'primary'"
+    [class.button-ghost]="variant() === 'ghost'"
+    [attr.href]="href() ?? null"
+    [attr.target]="target() ?? null"
+    [attr.rel]="rel() ?? null"
+    [attr.aria-label]="ariaLabel() ?? null"
+  >
+    <ng-content></ng-content>
+  </a>
+}
