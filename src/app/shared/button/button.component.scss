@@ -6,7 +6,7 @@
   min-height: 2rem;
   padding: 0.75rem 1.25rem;
   border-radius: 0.8rem;
-  border: 1px solid #d6d6d6;
+  border: 1px solid var(--color-border-button);
   font-size: 1.25rem;
   font-weight: 500;
   text-decoration: none;
@@ -21,39 +21,39 @@
 }
 
 .button-primary {
-  color: #f9fbff;
-  border-color: #0f1838;
-  background: #0f1838;
+  color: var(--color-text-on-primary);
+  border-color: var(--color-bg-button-primary);
+  background: var(--color-bg-button-primary);
 }
 
 .button-primary:hover {
-  background: #18244e;
-  border-color: #18244e;
+  background: var(--color-bg-button-primary-hover);
+  border-color: var(--color-bg-button-primary-hover);
 }
 
 .button-primary:active {
-  background: #0b122b;
-  border-color: #0b122b;
+  background: var(--color-bg-button-primary-pressed);
+  border-color: var(--color-bg-button-primary-pressed);
   transform: translateY(1px);
 }
 
 .button-ghost {
-  color: #252525;
+  color: var(--color-text-primary);
   background: transparent;
 }
 
 .button-ghost:hover {
-  background: #e8e8e8;
-  border-color: #c7c7c7;
+  background: var(--color-bg-button-ghost-hover);
+  border-color: var(--color-border-button-ghost-hover);
 }
 
 .button-ghost:active {
-  background: #dddddd;
-  border-color: #bcbcbc;
+  background: var(--color-bg-button-ghost-pressed);
+  border-color: var(--color-border-button-ghost-pressed);
   transform: translateY(1px);
 }
 
 .button:focus-visible {
-  outline: 3px solid #e0b23d;
+  outline: 3px solid var(--color-focus-ring);
   outline-offset: 2px;
 }

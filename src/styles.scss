@@ -2,6 +2,38 @@
   box-sizing: border-box;
 }
 
+:root {
+  --color-bg-canvas: #f6f2fA;
+  --color-bg-skip-link: #111827;
+  --color-bg-tag: #e5e0ea;
+  --color-bg-button-primary: #202020;
+  --color-bg-button-primary-hover: #18244e;
+  --color-bg-button-primary-pressed: #0b122b;
+  --color-bg-button-ghost-hover: #e8e8e8;
+  --color-bg-button-ghost-pressed: #dddddd;
+  --color-bg-avatar: var(--color-bg-canvas);
+
+  --color-border-default: #e5e0ea;
+  --color-border-button: #e5e0ea;
+  --color-border-button-ghost-hover: #c7c7c7;
+  --color-border-button-ghost-pressed: #bcbcbc;
+
+  --color-text-primary: #202020;
+  --color-text-secondary: #67626b;
+  --color-text-tag: #303030;
+  --color-text-on-dark: #f9fafb;
+  --color-text-on-primary: #f9fbff;
+
+  --color-project-sun: #e0b23d;
+  --color-project-pink: #cf71ad;
+  --color-project-sky: #6997da;
+  --color-project-violet: #8f7bda;
+  --color-project-mint: #68c390;
+
+  --color-accent: var(--color-project-violet);
+  --color-focus-ring: var(--color-accent);
+}
+
 html,
 body {
   margin: 0;
@@ -11,6 +43,6 @@ body {
 body {
   font-family: 'Manrope', sans-serif;
   line-height: 1.5;
-  color: #1d1d1d;
-  background: #efefef;
+  color: var(--color-text-primary);
+  background: var(--color-bg-canvas);
 }
