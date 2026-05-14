@@ -4,6 +4,11 @@
   overflow: hidden;
   background: var(--color-bg-canvas);
   height: 100%;
+  transition: background-color 200ms ease;
+}
+
+.project-card:hover {
+  background: var(--color-bg-canvas-light);
 }
 
 .card-cover {
