@@ -48,6 +48,12 @@ export class HomePage {
       summary: "Tool that supports children's self-directed exploration of Braille. Published at the ACM CHI Conference.",
       tags: ['Arduino C/C++', 'Accessibility', 'UX Research', 'Interactive Prototyping'],
       toneClass: 'tone-sky',
+      previewImage: {
+        src: '/images/projects/braillebuddy/braillebuddy-preview.jpg',
+        alt: 'Braillebuddy project preview showing the game station and braille letter cards.',
+        width: 1280,
+        height: 800,
+      },
     },
     {
       area: 'Interaction Design',
