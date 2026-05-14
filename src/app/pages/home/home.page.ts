@@ -4,6 +4,7 @@ import { ButtonComponent } from '../../shared/button/button.component';
 
 type ProjectCard = {
   area: string;
+  period: string;
   title: string;
   summary: string;
   tags: string[];
@@ -21,37 +22,43 @@ export class HomePage {
   protected readonly projectCards: ProjectCard[] = [
     {
       area: 'Fullstack Development',
-      title: 'Project One',
-      summary: 'Placeholder structure for problem framing, implementation decisions, and measured outcomes.',
-      tags: ['React', 'Node.js', 'PostgreSQL', 'TypeScript'],
+      period: '2026',
+      title: 'Cathouse',
+      summary:
+        'Simple charity web app that raised more than 1000€ for an animal shelter.',
+      tags: ['SvelteKit', 'NestJS', 'TypeScript', 'PostgreSQL', 'Docker'],
       toneClass: 'tone-sun',
     },
     {
-      area: 'Creative Coding',
-      title: 'Project Two',
-      summary: 'Placeholder structure for concept exploration, iteration process, and technical execution.',
-      tags: ['JavaScript', 'Canvas', 'WebGL', 'Creative'],
+      area: 'Mobile App Development',
+      period: '2023',
+      title: 'Playmake',
+      summary: 'Platform that allows to build interactive board-game-like games without any programming experience.',
+      tags: ['Flutter', 'OpenCV', 'UX Research', 'Interactive Prototyping'],
       toneClass: 'tone-pink',
     },
     {
-      area: 'HCI and Accessibility',
-      title: 'Project Three',
-      summary: 'Placeholder structure for user research, accessibility priorities, and delivery outcomes.',
-      tags: ['React', 'Accessibility', 'Education', 'UX Research'],
+      area: 'Embedded Development',
+      period: '2022/23',
+      title: 'Braillebuddy',
+      summary: "Tool that supports children's self-directed exploration of Braille. Published at the ACM CHI Conference.",
+      tags: ['Arduino C/C++', 'Accessibility', 'UX Research', 'Interactive Prototyping'],
       toneClass: 'tone-sky',
     },
     {
-      area: 'Mobile Product',
-      title: 'Project Four',
-      summary: 'Placeholder structure for mobile-first design and implementation constraints.',
-      tags: ['Angular', 'Ionic', 'Design System', 'Testing'],
+      area: 'Interaction Design',
+      period: '2017/18',
+      title: 'Magic Glove',
+      summary: 'Concept of a smart glove that integrates the human intuitively into the network of smart kitchen devices. Siemens Home Appliances Design Award (2nd place).',
+      tags: ['Arduino C/C++', 'UX Research', 'Interactive Prototyping'],
       toneClass: 'tone-violet',
     },
     {
-      area: 'Service Platform',
-      title: 'Project Five',
-      summary: 'Placeholder structure for architecture tradeoffs and scalable frontend patterns.',
-      tags: ['Angular', 'Nx', 'Performance', 'API'],
+      area: 'Service Design',
+      period: '2017',
+      title: 'Cura',
+      summary: 'Concept of a conversional agent that streamlines the early stages of home care.',
+      tags: ['UX Design', 'UX Research', 'Prototyping'],
       toneClass: 'tone-mint',
     },
   ];
