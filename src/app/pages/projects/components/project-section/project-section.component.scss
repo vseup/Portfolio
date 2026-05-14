@@ -1,0 +1,35 @@
+:host {
+  display: block;
+}
+
+.project-section {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin: 0.5rem 0rem;
+}
+
+.project-section h2 {
+  margin-bottom: 1rem;
+  color: var(--color-text-primary);
+  font-size: var(--text-size-3xl);
+  font-weight: var(--text-weight-bold);
+  line-height: var(--text-line-height-heading);
+}
+
+.project-section-content {
+  display: grid;
+  gap: 1rem;
+}
+
+.project-section-image {
+  width: 100%;
+  overflow: hidden;
+}
+
+.project-section-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}

@@ -8,14 +8,6 @@
   gap: 2rem;
 }
 
-.eyebrow {
-  color: var(--color-text-secondary);
-  text-transform: uppercase;
-  letter-spacing: var(--text-tracking-wide);
-  font-size: var(--text-size-xs);
-  font-weight: var(--text-weight-semibold);
-}
-
 .project-page h1 {
   margin-top: 0.3rem;
   color: var(--color-text-primary);
@@ -27,13 +19,37 @@
 .project-page p {
   color: var(--color-text-secondary);
   line-height: var(--text-line-height-body);
+  max-width: 62ch;
+}
+
+.project-page img {
+  max-width: 100%;
+  height: auto;
 }
 
 .lead {
   margin-top: 1rem;
-  max-width: 62ch;
 }
 
 .back {
   font-size: var(--text-size-xs);
+}
+
+.preview-bg {
+  background-color: #588DDB;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 30rem;
+}
+
+.preview-bg img {
+  height: 100%;
+  width: auto;
+}
+
+.img-100 {
+  width: 100%;
 }

@@ -1,0 +1,15 @@
+<section class="project-section" [attr.aria-labelledby]="resolvedHeadingId()">
+  <div class="text col">
+    <h2 [id]="resolvedHeadingId()">{{ title() }}</h2>
+    <div class="project-section-content">
+      <ng-content></ng-content>
+    </div>
+  </div>
+  @let sectionImage = image();
+  @if (sectionImage) {
+  <div class="project-section-image">
+    <img [ngSrc]="sectionImage.src" [alt]="sectionImage.alt" [width]="sectionImage.width"
+      [height]="sectionImage.height" />
+  </div>
+  }
+</section>
