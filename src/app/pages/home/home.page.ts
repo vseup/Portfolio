@@ -1,12 +1,11 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
-import { ButtonComponent } from '../../shared/button/button.component';
+import { HomeHeroComponent } from './home-hero/home-hero.component';
 import { ProjectCardComponent } from './project-card/project-card.component';
 import type { HomeProjectCardData } from './project-card/project-card.component';
 
 @Component({
   selector: 'app-home-page',
-  imports: [RouterLink, ButtonComponent, ProjectCardComponent],
+  imports: [HomeHeroComponent, ProjectCardComponent],
   templateUrl: './home.page.html',
   styleUrl: './home.page.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
