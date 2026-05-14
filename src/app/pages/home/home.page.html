@@ -1,0 +1,77 @@
+<section class="hero" aria-labelledby="home-title">
+  <div class="hero-copy">
+    <h1 id="home-title">
+      Hi, I'm Verena -
+      <span class="accent">a software engineer</span>
+    </h1>
+
+    <p>
+      with a background in UX/UI design and Human-Computer Interaction. I build thoughtful,
+      maintainable digital products that put people first.
+    </p>
+
+    <div class="hero-actions">
+      <a class="button button-primary" routerLink="/" fragment="projects">View Projects</a>
+      <a class="button button-ghost" href="https://github.com/vseup" target="_blank" rel="noopener">
+        GitHub
+      </a>
+    </div>
+  </div>
+
+  <div class="hero-visual" aria-hidden="true">
+    <div class="avatar">
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="projects" aria-labelledby="projects-title">
+  <header class="projects-header">
+    <h2 id="projects-title">Selected Projects</h2>
+    <p>A collection of work spanning software engineering, UX design, and human-computer interaction.</p>
+  </header>
+
+  <ul class="project-grid" aria-label="Selected project cards">
+    @for (project of projectCards; track project.title) {
+    <li>
+      <article class="project-card">
+        <div [class]="'card-cover ' + project.toneClass"></div>
+        <div class="card-body">
+          <p class="card-area">{{ project.area }}</p>
+          <h3>{{ project.title }}</h3>
+          <p class="card-summary">{{ project.summary }}</p>
+          <ul class="tag-list" aria-label="Technology tags">
+            @for (tag of project.tags; track tag) {
+            <li>{{ tag }}</li>
+            }
+          </ul>
+        </div>
+      </article>
+    </li>
+    }
+  </ul>
+</section>
+
+<footer class="home-footer" aria-label="Site footer">
+  <section class="footer-top">
+    <div>
+      <h2 class="footer-title">Verena Pues</h2>
+      <p>Software Engineer with a background in UX/UI design and Human-Computer Interaction.</p>
+    </div>
+    <div>
+      <h2 class="footer-title">Connect</h2>
+      <div class="connect-list">
+        <a href="mailto:hello@example.com" aria-label="Email">Email</a>
+        <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="footer-bottom">
+    <p>(c) 2026 Verena. All rights reserved.</p>
+    <div class="legal-list">
+      <a href="" rel="noopener">Privacy</a>
+      <a href="" rel="noopener">Imprint</a>
+    </div>
+  </section>
+</footer>
