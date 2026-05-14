@@ -26,12 +26,17 @@
   margin: 0;
 }
 
+.projects-header h2 {
+  font-weight: var(--text-weight-extra-bold);
+}
+
 .hero-copy h1 {
   max-width: 20ch;
   color: var(--color-text-primary);
-  font-size: clamp(2.2rem, 5vw, 4.5rem);
-  line-height: 1.06;
-  letter-spacing: -0.02em;
+  font-size: var(--text-size-5xl);
+  font-weight: var(--text-weight-extra-bold);
+  line-height: var(--text-line-height-tight);
+  letter-spacing: var(--text-tracking-tight);
 }
 
 .accent {
@@ -42,7 +47,8 @@
   margin-top: 1.5rem;
   max-width: 64ch;
   color: var(--color-text-secondary);
-  font-size: clamp(1rem, 1.6vw, 1.12rem);
+  font-size: var(--text-size-lg);
+  line-height: var(--text-line-height-body);
 }
 
 .hero-actions {
@@ -73,15 +79,16 @@
 
 .projects-header h2 {
   color: var(--color-text-primary);
-  font-size: clamp(2rem, 3.4vw, 3.5rem);
-  line-height: 1.12;
+  font-size: var(--text-size-4xl);
+  line-height: var(--text-line-height-heading);
 }
 
 .projects-header p {
   margin-top: 1rem;
   max-width: 50ch;
   color: var(--color-text-secondary);
-  font-size: clamp(1rem, 1.5vw, 1.18rem);
+  font-size: var(--text-size-lg);
+  line-height: var(--text-line-height-body);
 }
 
 .project-grid {
@@ -132,23 +139,23 @@
 .card-area {
   color: var(--color-text-secondary);
   text-transform: uppercase;
-  letter-spacing: 0.02em;
-  font-size: 0.85rem;
-  font-weight: 600;
+  letter-spacing: var(--text-tracking-wide);
+  font-size: var(--text-size-xs);
+  font-weight: var(--text-weight-semibold);
 }
 
 .card-body h3 {
   margin-top: 0.55rem;
   color: var(--color-text-primary);
-  font-size: 2rem;
-  font-size: clamp(1.4rem, 2.1vw, 2rem);
-  line-height: 1.2;
+  font-size: var(--text-size-3xl);
+  line-height: var(--text-line-height-title);
 }
 
 .card-summary {
   margin-top: 0.85rem;
   color: var(--color-text-secondary);
-  font-size: 1.02rem;
+  font-size: var(--text-size-md);
+  line-height: var(--text-line-height-body);
 }
 
 .tag-list {
@@ -164,7 +171,7 @@
   border-radius: 0.45rem;
   background: var(--color-bg-tag);
   color: var(--color-text-tag);
-  font-size: 0.95rem;
+  font-size: var(--text-size-sm);
   padding: 0.3rem 0.75rem;
 }
 
@@ -190,8 +197,9 @@
 
 .footer-title {
   color: var(--color-text-primary);
-  font-size: 1.65rem;
-  font-size: clamp(1.15rem, 2vw, 1.65rem);
+  font-size: var(--text-size-2xl);
+  font-weight: var(--text-weight-bold);
+  line-height: var(--text-line-height-heading);
   margin-bottom: 0.8rem;
 }
 
@@ -200,8 +208,8 @@
 .footer-bottom p,
 .footer-bottom a {
   color: var(--color-text-secondary);
-  font-size: 1.08rem;
-  line-height: 1.35;
+  font-size: var(--text-size-lg);
+  line-height: var(--text-line-height-body);
   text-decoration: none;
   max-width: 50ch;
 }
@@ -243,7 +251,7 @@
 
 .footer-bottom p {
   color: var(--color-text-secondary);
-  font-size: 1.05rem;
+  font-size: var(--text-size-md);
 }
 
 @media (max-width: 1024px) {

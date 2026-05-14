@@ -11,6 +11,8 @@
 }
 
 :root {
+  --font-family-base: 'Manrope', sans-serif;
+
   --color-bg-canvas: #f6f2fA;
   --color-bg-skip-link: #111827;
   --color-bg-tag: #e5e0ea;
@@ -40,6 +42,32 @@
 
   --color-accent: var(--color-project-violet);
   --color-focus-ring: var(--color-accent);
+
+  --text-weight-regular: 400;
+  --text-weight-medium: 500;
+  --text-weight-semibold: 600;
+  --text-weight-bold: 700;
+  --text-weight-extra-bold: 800;
+
+  --text-line-height-tight: 1.06;
+  --text-line-height-heading: 1.12;
+  --text-line-height-title: 1.2;
+  --text-line-height-solid: 1;
+  --text-line-height-body: 1.35;
+  --text-line-height-default: 1.5;
+
+  --text-tracking-tight: -0.02em;
+  --text-tracking-wide: 0.02em;
+
+  --text-size-xs: 0.85rem;
+  --text-size-sm: 0.95rem;
+  --text-size-md: 1.02rem;
+  --text-size-lg: 1.125rem;
+  --text-size-xl: 1.25rem;
+  --text-size-2xl: clamp(1.15rem, 2vw, 1.65rem);
+  --text-size-3xl: clamp(1.4rem, 2.1vw, 2rem);
+  --text-size-4xl: clamp(2rem, 3.4vw, 3.5rem);
+  --text-size-5xl: clamp(2.2rem, 5vw, 4.5rem);
 }
 
 html,
@@ -49,8 +77,9 @@ body {
 }
 
 body {
-  font-family: 'Manrope', sans-serif;
-  line-height: 1.5;
+  font-family: var(--font-family-base);
+  line-height: var(--text-line-height-default);
+  font-size: var(--text-size-md);
   color: var(--color-text-primary);
   background: var(--color-bg-canvas);
 }
