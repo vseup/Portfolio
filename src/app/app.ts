@@ -1,10 +1,11 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { RouterLink, RouterOutlet } from '@angular/router';
+import { RouterOutlet } from '@angular/router';
 import { PageFooterComponent } from './shared/layout/page-footer/page-footer.component';
+import { PageHeaderComponent } from './shared/layout/page-header/page-header.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, RouterLink, PageFooterComponent],
+  imports: [RouterOutlet, PageFooterComponent, PageHeaderComponent],
   templateUrl: './app.html',
   styleUrl: './app.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
