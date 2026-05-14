@@ -6,4 +6,6 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   styleUrl: './page-footer.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class PageFooterComponent {}
+export class PageFooterComponent {
+  protected readonly currentYear = new Date().getFullYear();
+}
