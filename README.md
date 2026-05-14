@@ -1,5 +1,15 @@
 # Portfolio
 
+## About This Project
+
+This repository is my personal portfolio website. It showcases selected private projects related to:
+
+- Human-Computer Interaction (HCI)
+- Design (UX/UI, prototyping, visual systems)
+- Software development (architecture, implementation, delivery)
+
+The goal is to present concise, privacy-safe case studies that connect user needs, design decisions, and technical execution.
+
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.11.
 
 ## Development server
@@ -27,8 +37,6 @@ ng generate --help
 ```
 
 ## Building
-
-To build the project run:
 
 ```bash
 ng build
