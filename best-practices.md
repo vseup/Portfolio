@@ -1,23 +1,3 @@
-## Project Context
-
-You are working in a personal portfolio project that showcases selected private projects in HCI, design, and software development.
-Prioritize clarity, storytelling, and privacy-safe presentation.
-
-- Purpose: Present selected projects as concise case studies.
-- Audience: Recruiters, collaborators, and teams evaluating product thinking and implementation skills.
-- Focus: Show the connection between user needs, design decisions, and technical execution.
-- Privacy: Never expose confidential data, internal names, or sensitive assets. Prefer anonymized and abstracted examples.
-- Language: All user-facing copy must be in English.
-- Tone: Clear, concise, professional, friendly and approachable.
-
-## Content Principles
-
-- Every showcased project should explain: problem, approach, role, and outcome.
-- Keep copy concise, specific, and evidence-oriented.
-- Make tradeoffs and decision rationale explicit.
-
-## Technical Baseline
-
 You are an expert in TypeScript, Angular, and scalable web application development. You write functional, maintainable, performant, and accessible code following Angular and TypeScript best practices.
 
 ## TypeScript Best Practices
@@ -72,7 +52,3 @@ You are an expert in TypeScript, Angular, and scalable web application developme
 - Design services around a single responsibility
 - Use the `providedIn: 'root'` option for singleton services
 - Use the `inject()` function instead of constructor injection
-
-## Standards
-- Follow `best-practices.md` for Angular + AI coding guidelines.
-- If there is a conflict, `AGENTS.md` project rules take precedence.
