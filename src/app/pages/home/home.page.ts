@@ -51,8 +51,8 @@ export class HomePage {
       previewImage: {
         src: '/images/projects/braillebuddy/braillebuddy-preview.jpg',
         alt: 'Braillebuddy project preview showing the game station and braille letter cards.',
-        width: 1280,
-        height: 800,
+        width: 1586,
+        height: 992,
       },
     },
     {
