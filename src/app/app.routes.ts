@@ -6,6 +6,14 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/home/home.page.js').then((m) => m.HomePage),
     title: 'Home',
   },
+  {
+    path: 'projects/braillebuddy',
+    loadComponent: () =>
+      import('./pages/projects/braillebuddy/braillebuddy.page.js').then(
+        (m) => m.BraillebuddyPage,
+      ),
+    title: 'Braillebuddy',
+  },
   // Fallback route: redirect unknown URLs to the landing page.
   {
     path: '**',

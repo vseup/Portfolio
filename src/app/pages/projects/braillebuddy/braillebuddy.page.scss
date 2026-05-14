@@ -1,0 +1,39 @@
+:host {
+  display: block;
+}
+
+.project-page {
+  padding: 6rem clamp(1.25rem, 5vw, 6rem) 4rem;
+  display: grid;
+  gap: 2rem;
+}
+
+.eyebrow {
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: var(--text-tracking-wide);
+  font-size: var(--text-size-xs);
+  font-weight: var(--text-weight-semibold);
+}
+
+.project-page h1 {
+  margin-top: 0.3rem;
+  color: var(--color-text-primary);
+  font-size: var(--text-size-5xl);
+  font-weight: var(--text-weight-extra-bold);
+  line-height: var(--text-line-height-heading);
+}
+
+.project-page p {
+  color: var(--color-text-secondary);
+  line-height: var(--text-line-height-body);
+}
+
+.lead {
+  margin-top: 1rem;
+  max-width: 62ch;
+}
+
+.back {
+  font-size: var(--text-size-xs);
+}

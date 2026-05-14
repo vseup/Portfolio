@@ -1,0 +1,17 @@
+<article class="project-page">
+
+  <a class="back" routerLink="/" fragment="projects">
+    &larr; back
+  </a>
+  <section aria-labelledby="braillebuddy-title">
+    <app-eyebrow [area]="project.area" [period]="project.period"></app-eyebrow>
+    <h1 id="braillebuddy-title">Braillebuddy</h1>
+    <p class="lead">Bachelor Thesis HCI - LMU Munich</p>
+    <p class="lead">
+      A compact tangible user interface that facilitates children’s self-directed exploration of Braille. Published at
+      the ACM CHI Conference on Human Factors in Computing Systems 2023.
+    </p>
+    <app-tags [title]="project.title" [tags]="project.tags"></app-tags>
+  </section>
+
+</article>
