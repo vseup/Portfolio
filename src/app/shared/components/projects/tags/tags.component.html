@@ -1,0 +1,5 @@
+<ul class="tags" [attr.aria-label]="'Technology tags for ' + title()">
+  @for (tag of tags(); track tag) {
+  <li>{{ tag }}</li>
+  }
+</ul>
