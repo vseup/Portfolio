@@ -1,0 +1,79 @@
+.project-card {
+  border: 1px solid var(--color-border-default);
+  border-radius: 1rem;
+  overflow: hidden;
+  background: var(--color-bg-canvas);
+  height: 100%;
+}
+
+.card-cover {
+  height: 21rem;
+}
+
+.tone-sun {
+  background: var(--color-project-sun);
+}
+
+.tone-pink {
+  background: var(--color-project-pink);
+}
+
+.tone-sky {
+  background: var(--color-project-sky);
+}
+
+.tone-violet {
+  background: var(--color-project-violet);
+}
+
+.tone-mint {
+  background: var(--color-project-mint);
+}
+
+.card-body {
+  padding: 1.35rem 1.35rem 1.45rem;
+}
+
+.card-body h3,
+.card-body p {
+  margin: 0;
+}
+
+.card-area {
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: var(--text-tracking-wide);
+  font-size: var(--text-size-xs);
+  font-weight: var(--text-weight-semibold);
+}
+
+.card-body h3 {
+  margin-top: 0.55rem;
+  color: var(--color-text-primary);
+  font-size: var(--text-size-3xl);
+  line-height: var(--text-line-height-title);
+}
+
+.card-summary {
+  margin-top: 0.85rem;
+  color: var(--color-text-secondary);
+  font-size: var(--text-size-md);
+  line-height: var(--text-line-height-body);
+}
+
+.tag-list {
+  margin: 1rem 0 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag-list li {
+  border-radius: 0.45rem;
+  background: var(--color-bg-tag);
+  color: var(--color-text-tag);
+  font-size: var(--text-size-sm);
+  padding: 0.3rem 0.75rem;
+}

@@ -1,25 +1,18 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { ButtonComponent } from '../../shared/button/button.component';
-
-type ProjectCard = {
-  area: string;
-  period: string;
-  title: string;
-  summary: string;
-  tags: string[];
-  toneClass: string;
-};
+import { ProjectCardComponent } from './project-card/project-card.component';
+import type { HomeProjectCardData } from './project-card/project-card.component';
 
 @Component({
   selector: 'app-home-page',
-  imports: [RouterLink, ButtonComponent],
+  imports: [RouterLink, ButtonComponent, ProjectCardComponent],
   templateUrl: './home.page.html',
   styleUrl: './home.page.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class HomePage {
-  protected readonly projectCards: ProjectCard[] = [
+  protected readonly projectCards: HomeProjectCardData[] = [
     {
       area: 'Fullstack Development',
       period: '2026',

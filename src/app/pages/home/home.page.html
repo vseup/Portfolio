@@ -33,19 +33,7 @@
   <ul class="project-grid" aria-label="Selected project cards">
     @for (project of projectCards; track project.title) {
     <li>
-      <article class="project-card">
-        <div [class]="'card-cover ' + project.toneClass"></div>
-        <div class="card-body">
-          <p class="card-area">{{ project.area }} · {{ project.period }}</p>
-          <h3>{{ project.title }}</h3>
-          <p class="card-summary">{{ project.summary }}</p>
-          <ul class="tag-list" aria-label="Technology tags">
-            @for (tag of project.tags; track tag) {
-            <li>{{ tag }}</li>
-            }
-          </ul>
-        </div>
-      </article>
+      <app-project-card [project]="project"></app-project-card>
     </li>
     }
   </ul>
