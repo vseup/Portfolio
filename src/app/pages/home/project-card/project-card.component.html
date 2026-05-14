@@ -1,5 +1,16 @@
 <article class="project-card">
-  <div [class]="'card-cover ' + project().toneClass"></div>
+  @if (project().previewImage; as image) {
+    <div class="card-cover card-cover-image">
+      <img
+        [ngSrc]="image.src"
+        [alt]="image.alt"
+        [width]="image.width"
+        [height]="image.height"
+      />
+    </div>
+  } @else {
+    <div [class]="'card-cover ' + project().toneClass"></div>
+  }
   <div class="card-body">
     <p class="card-area">{{ project().area }} · {{ project().period }}</p>
     <h3>{{ project().title }}</h3>

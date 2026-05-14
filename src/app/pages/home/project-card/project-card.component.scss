@@ -10,6 +10,21 @@
   height: 21rem;
 }
 
+.card-cover-image {
+  overflow: hidden;
+}
+
+.card-cover-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 240ms ease;
+}
+
+.project-card:hover .card-cover-image img {
+  transform: scale(1.04);
+}
+
 .tone-sun {
   background: var(--color-project-sun);
 }
@@ -76,4 +91,14 @@
   color: var(--color-text-tag);
   font-size: var(--text-size-sm);
   padding: 0.3rem 0.75rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card-cover-image img {
+    transition: none;
+  }
+
+  .project-card:hover .card-cover-image img {
+    transform: none;
+  }
 }

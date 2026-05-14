@@ -20,6 +20,12 @@ export class HomePage {
         'Simple charity web app that raised more than 1000€ for an animal shelter.',
       tags: ['SvelteKit', 'NestJS', 'TypeScript', 'PostgreSQL', 'Docker'],
       toneClass: 'tone-sun',
+      previewImage: {
+        src: '/images/projects/cathouse/cathouse-preview.jpg',
+        alt: 'Cathouse project preview showing the charity web app interface.',
+        width: 1280,
+        height: 786,
+      },
     },
     {
       area: 'Mobile App Development',
