@@ -34,6 +34,12 @@ export class HomePage {
       summary: 'Platform that allows to build interactive board-game-like games without any programming experience.',
       tags: ['Flutter', 'OpenCV', 'UX Research', 'Interactive Prototyping'],
       toneClass: 'tone-pink',
+      previewImage: {
+        src: '/images/projects/playmake/playmake-preview.jpg',
+        alt: 'Playmake project preview showing the board-game-like setup.',
+        width: 1280,
+        height: 899,
+      },
     },
     {
       area: 'Embedded Development',
