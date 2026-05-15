@@ -1,16 +1,16 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { NgOptimizedImage } from '@angular/common';
-import { TagsComponent } from '../../../shared/components/projects/tags/tags.component';
-import { EyebrowComponent } from '../../../shared/components/projects/tags/eyebrow/eyebrow.component';
 import { BRAILLEBUDDY_PROJECT } from '../../../shared/constants/projects.constants';
 import type { ProjectData } from '../../../shared/types/project-data.type';
 import type { ProjectImageData } from '../../../shared/types/project-image-data.type';
 import { RouterLink } from '@angular/router';
 import { ProjectSectionComponent } from '../components/project-section/project-section.component';
+import { ProjectHeroComponent } from '../components/project-hero/project-hero.component';
+import { DividerComponent } from '../../../shared/components/layout/divider/divider.component';
 
 @Component({
   selector: 'app-braillebuddy-page',
-  imports: [NgOptimizedImage, RouterLink, TagsComponent, EyebrowComponent, ProjectSectionComponent],
+  imports: [NgOptimizedImage, RouterLink, ProjectHeroComponent, ProjectSectionComponent, DividerComponent],
   templateUrl: './braillebuddy.page.html',
   styleUrl: './braillebuddy.page.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -39,6 +39,6 @@ export class BraillebuddyPage {
     src: '/images/projects/braillebuddy/braillebuddy-study-setup.jpg',
     width: 1436,
     height: 609,
-    alt: "User testing setup where a blind student investigates Braillebuddy's braille letter cards using his hands."
-  }
+    alt: "User testing setup where a blind student investigates Braillebuddy's braille letter cards using his hands.",
+  };
 }

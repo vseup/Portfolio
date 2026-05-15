@@ -1,0 +1,19 @@
+h1 {
+  margin-top: 0.3rem;
+  margin-bottom: 2rem;
+  color: var(--color-text-primary);
+  font-size: var(--text-size-5xl);
+  font-weight: var(--text-weight-extra-bold);
+  line-height: var(--text-line-height-heading);
+}
+
+p {
+  color: var(--color-text-secondary);
+  line-height: var(--text-line-height-body);
+  max-width: 62ch;
+  margin-bottom: 0.75rem;
+}
+
+.project-tags {
+  padding-top: 0.75rem;
+}
