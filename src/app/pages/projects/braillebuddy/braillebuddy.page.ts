@@ -17,16 +17,28 @@ import { ProjectSectionComponent } from '../components/project-section/project-s
 })
 export class BraillebuddyPage {
   protected readonly project: ProjectData = BRAILLEBUDDY_PROJECT;
-  protected readonly overviewImage: ProjectImageData = {
-    src: '/images/projects/braillebuddy/braille-cells.jpg',
-    width: 8247,
-    height: 2052,
+  protected readonly motivationImage1: ProjectImageData = {
+    src: '/images/projects/braillebuddy/braille-learning.jpg',
+    width: 1255,
+    height: 837,
+    alt: "Adult hands guide children's hands while exploring a braille educational book.",
+  };
+  protected readonly motivationImage2: ProjectImageData = {
+    src: '/images/projects/braillebuddy/braille-cells.png',
+    width: 1255,
+    height: 283,
     alt: 'Braille alphabet cells shown as tactile dot patterns.',
   };
   protected readonly prototypeImage: ProjectImageData = {
-    src: '/images/projects/braillebuddy/braillebuddy-prototype.jpg',
+    src: '/images/projects/braillebuddy/braillebuddy-prototype.png',
     width: 1080,
     height: 545,
     alt: 'Internally, an ESP32, RFID/NFC setup, photoresistors, and a DFPlayer enable card detection and responsive audio feedback.',
   };
+  protected readonly evaluationImage: ProjectImageData = {
+    src: '/images/projects/braillebuddy/braillebuddy-study-setup.jpg',
+    width: 1436,
+    height: 609,
+    alt: "User testing setup where a blind student investigates Braillebuddy's braille letter cards using his hands."
+  }
 }
