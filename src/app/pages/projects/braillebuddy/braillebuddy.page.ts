@@ -17,6 +17,7 @@ import { DividerComponent } from '../../../components/shared/layout/divider/divi
 })
 export class BraillebuddyPage {
   protected readonly project: ProjectData = BRAILLEBUDDY_PROJECT;
+  //https://www.pexels.com/de-de/foto/hande-buch-lernen-ausbildung-7694417/
   protected readonly motivationImage1: ProjectImageData = {
     src: '/images/projects/braillebuddy/braille-learning.jpg',
     width: 1255,

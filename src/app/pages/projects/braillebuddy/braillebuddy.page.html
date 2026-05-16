@@ -3,15 +3,14 @@
   <a class="back" routerLink="/" fragment="projects">
     &larr; back
   </a>
-  <app-project-hero headingId="braillebuddy-hero" heading="Braillebuddy" [area]="project.area" [period]="project.period"
-    subtitle="Bachelor Thesis HCI - LMU Munich"
+  <app-project-hero headingId="braillebuddy-hero" [heading]="project.title" [area]="project.area"
+    [period]="project.period" subtitle="Bachelor Thesis HCI - LMU Munich"
     description="A compact tangible user interface that facilitates children’s self-directed exploration of Braille. Published at the ACM CHI Conference on Human Factors in Computing Systems 2023."
     [tagsTitle]="project.title" [tags]="project.tags"></app-project-hero>
   <div class="preview-bg">
     <img ngSrc="/images/projects/braillebuddy/braillebuddy-preview.jpg" width="1586" height="992"
       alt="Braillebuddy's game station with braille letter cards spelling the german word 'Hase'." />
   </div>
-  <!--https://www.pexels.com/de-de/foto/hande-buch-lernen-ausbildung-7694417/-->
   <app-project-section title="Motivation" headingId="braillebuddy-motivation" [image]="motivationImage1">
     <p>For children with severe visual impairments, access to written language is limited. While screen readers and
       audio tools offer workarounds, they can’t replace Braille’s role in fostering independence, education, and

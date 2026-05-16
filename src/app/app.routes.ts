@@ -14,6 +14,14 @@ export const routes: Routes = [
       ),
     title: 'Braillebuddy',
   },
+  {
+    path: 'projects/playmake',
+    loadComponent: () =>
+      import('./pages/projects/playmake/playmake.page.js').then(
+        (m) => m.PlaymakePage,
+      ),
+    title: 'Braillebuddy',
+  },
   // Fallback route: redirect unknown URLs to the landing page.
   {
     path: '**',
