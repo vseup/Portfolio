@@ -1,6 +1,6 @@
 import { NgOptimizedImage } from '@angular/common';
 import { ChangeDetectionStrategy, Component, computed, input } from '@angular/core';
-import type { ProjectImageData } from '../../../../shared/types/project-image-data.type';
+import type { ProjectImageData } from '../../shared/types/project-image-data.type';
 
 @Component({
   selector: 'app-project-section',

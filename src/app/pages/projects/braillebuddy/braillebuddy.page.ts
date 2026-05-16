@@ -1,12 +1,12 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { NgOptimizedImage } from '@angular/common';
-import { BRAILLEBUDDY_PROJECT } from '../../../shared/constants/projects.constants';
-import type { ProjectData } from '../../../shared/types/project-data.type';
-import type { ProjectImageData } from '../../../shared/types/project-image-data.type';
+import { BRAILLEBUDDY_PROJECT } from '../../../components/shared/constants/projects.constants';
+import type { ProjectData } from '../../../components/shared/types/project-data.type';
+import type { ProjectImageData } from '../../../components/shared/types/project-image-data.type';
 import { RouterLink } from '@angular/router';
-import { ProjectSectionComponent } from '../components/project-section/project-section.component';
-import { ProjectHeroComponent } from '../components/project-hero/project-hero.component';
-import { DividerComponent } from '../../../shared/components/layout/divider/divider.component';
+import { ProjectSectionComponent } from '../../../components/projects/project-section/project-section.component';
+import { ProjectHeroComponent } from '../../../components/projects/project-hero/project-hero.component';
+import { DividerComponent } from '../../../components/shared/components/layout/divider/divider.component';
 
 @Component({
   selector: 'app-braillebuddy-page',
