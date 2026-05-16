@@ -7,9 +7,13 @@
   </div>
   @let sectionImage = image();
   @if (sectionImage) {
-  <div class="project-section-image">
-    <img [ngSrc]="sectionImage.src" [alt]="sectionImage.alt" [width]="sectionImage.width"
-      [height]="sectionImage.height" />
-  </div>
+    <div class="project-section-image">
+      <img
+        [ngSrc]="sectionImage.src"
+        [alt]="sectionImage.alt"
+        [width]="sectionImage.width"
+        [height]="sectionImage.height"
+      />
+    </div>
   }
 </section>

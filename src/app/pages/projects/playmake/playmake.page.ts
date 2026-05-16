@@ -5,12 +5,12 @@ import { RouterLink } from '@angular/router';
 import { ProjectHeroComponent } from '../../../components/projects/project-hero/project-hero.component';
 
 @Component({
-    selector: 'app-playmake-page',
-    imports: [RouterLink, ProjectHeroComponent],
-    templateUrl: './playmake.page.html',
-    styleUrl: './playmake.page.scss',
-    changeDetection: ChangeDetectionStrategy.OnPush,
+  selector: 'app-playmake-page',
+  imports: [RouterLink, ProjectHeroComponent],
+  templateUrl: './playmake.page.html',
+  styleUrl: './playmake.page.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class PlaymakePage {
-    protected readonly project: ProjectData = PLAYMAKE_PROJECT;
+  protected readonly project: ProjectData = PLAYMAKE_PROJECT;
 }

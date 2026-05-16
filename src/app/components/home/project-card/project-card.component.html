@@ -1,12 +1,15 @@
-<a class="project-card-link" [routerLink]="project().detailsRoute"
-  [attr.aria-label]="'Open project details for ' + project().title">
+<a
+  class="project-card-link"
+  [routerLink]="project().detailsRoute"
+  [attr.aria-label]="'Open project details for ' + project().title"
+>
   <article class="project-card">
     @if (project().previewImage; as image) {
-    <div class="card-cover card-cover-image">
-      <img [ngSrc]="image.src" [alt]="image.alt" [width]="image.width" [height]="image.height" />
-    </div>
+      <div class="card-cover card-cover-image">
+        <img [ngSrc]="image.src" [alt]="image.alt" [width]="image.width" [height]="image.height" />
+      </div>
     } @else {
-    <div [class]="'card-cover ' + project().toneClass"></div>
+      <div [class]="'card-cover ' + project().toneClass"></div>
     }
     <div class="card-body">
       <app-eyebrow [area]="project().area" [period]="project().period"></app-eyebrow>

@@ -1,60 +1,101 @@
 <article class="project-page">
-
-  <a class="back" routerLink="/" fragment="projects">
-    &larr; back
-  </a>
-  <app-project-hero headingId="braillebuddy-hero" [heading]="project.title" [area]="project.area"
-    [period]="project.period" subtitle="Bachelor Thesis HCI - LMU Munich"
+  <a class="back" routerLink="/" fragment="projects"> &larr; back </a>
+  <app-project-hero
+    headingId="braillebuddy-hero"
+    [heading]="project.title"
+    [area]="project.area"
+    [period]="project.period"
+    subtitle="Bachelor Thesis HCI - LMU Munich"
     description="A compact tangible user interface that facilitates children’s self-directed exploration of Braille. Published at the ACM CHI Conference on Human Factors in Computing Systems 2023."
-    [tagsTitle]="project.title" [tags]="project.tags"></app-project-hero>
+    [tagsTitle]="project.title"
+    [tags]="project.tags"
+  ></app-project-hero>
   <div class="preview-bg">
-    <img ngSrc="/images/projects/braillebuddy/braillebuddy-preview.jpg" width="1586" height="992"
-      alt="Braillebuddy's game station with braille letter cards spelling the german word 'Hase'." />
+    <img
+      ngSrc="/images/projects/braillebuddy/braillebuddy-preview.jpg"
+      width="1586"
+      height="992"
+      alt="Braillebuddy's game station with braille letter cards spelling the german word 'Hase'."
+    />
   </div>
-  <app-project-section title="Motivation" headingId="braillebuddy-motivation" [image]="motivationImage1">
-    <p>For children with severe visual impairments, access to written language is limited. While screen readers and
-      audio tools offer workarounds, they can’t replace Braille’s role in fostering independence, education, and
-      literacy. But learning Braille is hard — it’s practice-intensive and not always playful or intuitive.</p>
-    <p>I wanted to explore whether Tangible User Interfaces (TUIs) could offer a more engaging and independent way to
-      support Braille learning. TUIs combine digital feedback with physical interaction — that combination has great
-      potential, especially for children who rely more on touch than sight.</p>
-    <p>On a personal note, I was also simply drawn to the aesthetic and tactile beauty of Braille.</p>
-    <img [ngSrc]="motivationImage2.src" [width]="motivationImage2.width" [height]="motivationImage2.height"
-      [alt]="motivationImage2.alt" />
+  <app-project-section
+    title="Motivation"
+    headingId="braillebuddy-motivation"
+    [image]="motivationImage1"
+  >
+    <p>
+      For children with severe visual impairments, access to written language is limited. While
+      screen readers and audio tools offer workarounds, they can’t replace Braille’s role in
+      fostering independence, education, and literacy. But learning Braille is hard — it’s
+      practice-intensive and not always playful or intuitive.
+    </p>
+    <p>
+      I wanted to explore whether Tangible User Interfaces (TUIs) could offer a more engaging and
+      independent way to support Braille learning. TUIs combine digital feedback with physical
+      interaction — that combination has great potential, especially for children who rely more on
+      touch than sight.
+    </p>
+    <p>
+      On a personal note, I was also simply drawn to the aesthetic and tactile beauty of Braille.
+    </p>
+    <img
+      [ngSrc]="motivationImage2.src"
+      [width]="motivationImage2.width"
+      [height]="motivationImage2.height"
+      [alt]="motivationImage2.alt"
+    />
   </app-project-section>
   <app-divider></app-divider>
   <app-project-section title="Approach" headingId="braillebuddy-approach">
     <p>
-      I followed a User-Centered Design process to understand how children with visual impairments learn Braille. The
-      project was developed in close exchange with special education teachers, students and accessibility researchers,
-      who helped define the educational, tactile, and practical requirements for the prototype.
+      I followed a User-Centered Design process to understand how children with visual impairments
+      learn Braille. The project was developed in close exchange with special education teachers,
+      students and accessibility researchers, who helped define the educational, tactile, and
+      practical requirements for the prototype.
     </p>
-    <p>Through research, concept development, and iterative prototyping, I explored how Braille learning could become
-      more independent and engaging.</p>
-    <p>From there, I defined three key design requirements that shaped the prototype and helped translate the research
-      insights into tangible design decisions.</p>
+    <p>
+      Through research, concept development, and iterative prototyping, I explored how Braille
+      learning could become more independent and engaging.
+    </p>
+    <p>
+      From there, I defined three key design requirements that shaped the prototype and helped
+      translate the research insights into tangible design decisions.
+    </p>
   </app-project-section>
   <div class="post-its">
     <div class="post-it-1">
-      <p><b>Robust and appealing form factor.</b> The TUI should be self-contained and easy to use independently —
-        requiring no screens or setup. A durable build, along with both tactile and visual appeal, will make it suitable
-        for blind children while also inviting to sighted peers, fostering inclusion.</p>
+      <p>
+        <b>Robust and appealing form factor.</b> The TUI should be self-contained and easy to use
+        independently — requiring no screens or setup. A durable build, along with both tactile and
+        visual appeal, will make it suitable for blind children while also inviting to sighted
+        peers, fostering inclusion.
+      </p>
     </div>
     <div class="post-it-2">
-      <p><b>Clear physical affordances.</b> Elements should follow standard Braille sizing for accurate recognition, as
-        oversized characters (common in other tools) distort the tactile experience. Beveled corners and clear slot
-        guidance ensure intuitive, error-free interaction.</p>
+      <p>
+        <b>Clear physical affordances.</b> Elements should follow standard Braille sizing for
+        accurate recognition, as oversized characters (common in other tools) distort the tactile
+        experience. Beveled corners and clear slot guidance ensure intuitive, error-free
+        interaction.
+      </p>
     </div>
     <div class="post-it-3">
-      <p><b>Modular learning system.</b> The TUI should offer different game modes and a scalable card system, making it
-        flexible, engaging, and expandable for different learners and skill levels.</p>
+      <p>
+        <b>Modular learning system.</b> The TUI should offer different game modes and a scalable
+        card system, making it flexible, engaging, and expandable for different learners and skill
+        levels.
+      </p>
     </div>
   </div>
   <app-divider></app-divider>
-  <app-project-section title="Prototype" headingId="braillebuddy-prototype" [image]="prototypeImage">
+  <app-project-section
+    title="Prototype"
+    headingId="braillebuddy-prototype"
+    [image]="prototypeImage"
+  >
     <p>
-      After several design iterations, I built Braillebuddy — a standalone, screenless learning device designed for
-      early Braille learners. It consists of:
+      After several design iterations, I built Braillebuddy — a standalone, screenless learning
+      device designed for early Braille learners. It consists of:
     </p>
     <ul>
       <li>
@@ -70,9 +111,11 @@
         <p>Audio feedback via an embedded speaker</p>
       </li>
     </ul>
-    <p>The implementation connects RFID/NFC tag recognition, physical input elements, and embedded audio feedback
-      through an ESP32-based hardware setup, translating tactile interactions into immediate, accessible learning
-      responses.</p>
+    <p>
+      The implementation connects RFID/NFC tag recognition, physical input elements, and embedded
+      audio feedback through an ESP32-based hardware setup, translating tactile interactions into
+      immediate, accessible learning responses.
+    </p>
     <p>Children can play three example learning games:</p>
     <ul>
       <li>
@@ -85,34 +128,55 @@
         <p>Word Riddle – guess a mystery word with limited clues</p>
       </li>
     </ul>
-    <p>The prototype gives real-time auditory feedback and celebrates correct answers with sound effects — no screen
-      needed,
-      no adult supervision required.</p>
+    <p>
+      The prototype gives real-time auditory feedback and celebrates correct answers with sound
+      effects — no screen needed, no adult supervision required.
+    </p>
   </app-project-section>
   <app-divider></app-divider>
-  <app-project-section title="Evaluation" headingId="braillebuddy-evaluation" [image]="evaluationImage">
+  <app-project-section
+    title="Evaluation"
+    headingId="braillebuddy-evaluation"
+    [image]="evaluationImage"
+  >
     <p>
-      In collaboration with a special education school, I evaluated BrailleBuddy with eleven first to third grade
-      students with visual impairment, who are currently learning Braille.
+      In collaboration with a special education school, I evaluated BrailleBuddy with eleven first
+      to third grade students with visual impairment, who are currently learning Braille.
     </p>
-    <p>Even without training, the students showcased that the device is generally usable in an unsupervised manner.
-      Further, the children enjoyed playing with the box, highlighting its intrinsically motivating nature.</p>
-    <p>Overall, our results show that BrailleBuddy has the potential to be successfully integrated into the learning of
-      Braille, specifically by offering children an opportunity to play with and explore Braille in an extracurricular
-      fashion.</p>
+    <p>
+      Even without training, the students showcased that the device is generally usable in an
+      unsupervised manner. Further, the children enjoyed playing with the box, highlighting its
+      intrinsically motivating nature.
+    </p>
+    <p>
+      Overall, our results show that BrailleBuddy has the potential to be successfully integrated
+      into the learning of Braille, specifically by offering children an opportunity to play with
+      and explore Braille in an extracurricular fashion.
+    </p>
   </app-project-section>
   <app-divider></app-divider>
   <app-project-section title="Impact" headingId="braillebuddy-impact">
-    <p>The main impact of Braillebuddy lies in its ability to support children in learning Braille through independent,
-      hands-on exploration and a playful experience: children can touch, try, listen, make mistakes, and receive
-      immediate feedback.</p>
-    <p>The project was published at CHI 2023, the leading international
-      conference on Human-Computer Interaction, further underlining its relevance within the Human-Computer Interaction
-      and accessibility research community. This is something I’m very proud of.</p>
-    <p>For more information you can read the full paper here: <b><a
-          href="https://dl.acm.org/doi/10.1145/3544548.3580844" target="_blank" rel="noopener noreferrer">BrailleBuddy:
-          A Tangible User Interface
-          to Support
-          Children with Visual Impairment in Learning Braille</a></b></p>
+    <p>
+      The main impact of Braillebuddy lies in its ability to support children in learning Braille
+      through independent, hands-on exploration and a playful experience: children can touch, try,
+      listen, make mistakes, and receive immediate feedback.
+    </p>
+    <p>
+      The project was published at CHI 2023, the leading international conference on Human-Computer
+      Interaction, further underlining its relevance within the Human-Computer Interaction and
+      accessibility research community. This is something I’m very proud of.
+    </p>
+    <p>
+      For more information you can read the full paper here:
+      <b
+        ><a
+          href="https://dl.acm.org/doi/10.1145/3544548.3580844"
+          target="_blank"
+          rel="noopener noreferrer"
+          >BrailleBuddy: A Tangible User Interface to Support Children with Visual Impairment in
+          Learning Braille</a
+        ></b
+      >
+    </p>
   </app-project-section>
 </article>

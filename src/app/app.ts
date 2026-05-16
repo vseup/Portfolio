@@ -10,4 +10,4 @@ import { PageHeaderComponent } from './components/shared/layout/page-header/page
   styleUrl: './app.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class App { }
+export class App {}

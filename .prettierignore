@@ -1,0 +1,10 @@
+# Build and dependency outputs
+node_modules/
+dist/
+.angular/
+
+# Test and coverage outputs
+coverage/
+
+# Tooling/cache files
+.vscode/

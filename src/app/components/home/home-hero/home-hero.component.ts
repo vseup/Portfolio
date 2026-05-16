@@ -10,4 +10,4 @@ import { ButtonComponent } from '../../shared/button/button.component';
   styleUrl: './home-hero.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class HomeHeroComponent { }
+export class HomeHeroComponent {}

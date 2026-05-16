@@ -5,8 +5,7 @@ export const PROJECTS: ProjectData[] = [
     area: 'Fullstack Development',
     period: '2026',
     title: 'Cathouse',
-    summary:
-      'Simple charity web app that raised more than 1000€ for an animal shelter.',
+    summary: 'Simple charity web app that raised more than 1000€ for an animal shelter.',
     tags: ['SvelteKit', 'NestJS', 'TypeScript', 'PostgreSQL', 'Docker'],
     toneClass: 'tone-sun',
     detailsRoute: '/',
@@ -69,8 +68,7 @@ export const PROJECTS: ProjectData[] = [
     area: 'Service Design',
     period: '2017',
     title: 'Cura',
-    summary:
-      'Concept of a conversional agent that streamlines the early stages of home care.',
+    summary: 'Concept of a conversional agent that streamlines the early stages of home care.',
     tags: ['UX Design', 'UX Research', 'Prototyping'],
     toneClass: 'tone-mint',
     detailsRoute: '/',
@@ -87,9 +85,7 @@ const braillebuddyProject = PROJECTS.find(
   (project) => project.detailsRoute === '/projects/braillebuddy',
 );
 
-const playmakeProject = PROJECTS.find(
-  (project) => project.detailsRoute === '/projects/playmake',
-);
+const playmakeProject = PROJECTS.find((project) => project.detailsRoute === '/projects/playmake');
 
 export const BRAILLEBUDDY_PROJECT = braillebuddyProject!;
 export const PLAYMAKE_PROJECT = playmakeProject!;

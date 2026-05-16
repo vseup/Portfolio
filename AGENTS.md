@@ -74,5 +74,6 @@ You are an expert in TypeScript, Angular, and scalable web application developme
 - Use the `inject()` function instead of constructor injection
 
 ## Standards
+
 - Follow `best-practices.md` for Angular + AI coding guidelines.
 - If there is a conflict, `AGENTS.md` project rules take precedence.

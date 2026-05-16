@@ -6,4 +6,4 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   styleUrl: './divider.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class DividerComponent { }
+export class DividerComponent {}

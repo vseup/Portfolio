@@ -10,7 +10,13 @@ import { DividerComponent } from '../../../components/shared/layout/divider/divi
 
 @Component({
   selector: 'app-braillebuddy-page',
-  imports: [NgOptimizedImage, RouterLink, ProjectHeroComponent, ProjectSectionComponent, DividerComponent],
+  imports: [
+    NgOptimizedImage,
+    RouterLink,
+    ProjectHeroComponent,
+    ProjectSectionComponent,
+    DividerComponent,
+  ],
   templateUrl: './braillebuddy.page.html',
   styleUrl: './braillebuddy.page.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,

@@ -9,17 +9,13 @@ export const routes: Routes = [
   {
     path: 'projects/braillebuddy',
     loadComponent: () =>
-      import('./pages/projects/braillebuddy/braillebuddy.page.js').then(
-        (m) => m.BraillebuddyPage,
-      ),
+      import('./pages/projects/braillebuddy/braillebuddy.page.js').then((m) => m.BraillebuddyPage),
     title: 'Braillebuddy',
   },
   {
     path: 'projects/playmake',
     loadComponent: () =>
-      import('./pages/projects/playmake/playmake.page.js').then(
-        (m) => m.PlaymakePage,
-      ),
+      import('./pages/projects/playmake/playmake.page.js').then((m) => m.PlaymakePage),
     title: 'Playmake',
   },
   // Fallback route: redirect unknown URLs to the landing page.
