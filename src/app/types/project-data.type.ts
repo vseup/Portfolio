@@ -1,6 +1,6 @@
 import type { ProjectImageData } from './project-image-data.type';
 
-export type ProjectData = {
+export interface ProjectData {
   area: string;
   period: string;
   title: string;
@@ -9,4 +9,4 @@ export type ProjectData = {
   toneClass: string;
   detailsRoute: string;
   previewImage?: ProjectImageData;
-};
+}
