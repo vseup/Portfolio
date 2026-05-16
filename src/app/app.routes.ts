@@ -20,7 +20,7 @@ export const routes: Routes = [
       import('./pages/projects/playmake/playmake.page.js').then(
         (m) => m.PlaymakePage,
       ),
-    title: 'Braillebuddy',
+    title: 'Playmake',
   },
   // Fallback route: redirect unknown URLs to the landing page.
   {
