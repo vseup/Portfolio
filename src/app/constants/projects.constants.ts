@@ -87,4 +87,9 @@ const braillebuddyProject = PROJECTS.find(
   (project) => project.detailsRoute === '/projects/braillebuddy',
 );
 
+const playmakeProject = PROJECTS.find(
+  (project) => project.detailsRoute === '/projects/playmake',
+);
+
 export const BRAILLEBUDDY_PROJECT = braillebuddyProject!;
+export const PLAYMAKE_PROJECT = playmakeProject!;

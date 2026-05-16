@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, input } from '@angular/core';
-import { EyebrowComponent } from '../../shared/components/projects/tags/eyebrow/eyebrow.component';
-import { TagsComponent } from '../../shared/components/projects/tags/tags.component';
+import { EyebrowComponent } from '../eyebrow/eyebrow.component';
+import { TagsComponent } from '../tags/tags.component';
 
 @Component({
   selector: 'app-project-hero',
