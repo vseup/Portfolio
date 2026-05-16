@@ -34,6 +34,10 @@
   --color-text-tag: #303030;
   --color-text-on-dark: #f9fafb;
   --color-text-on-primary: #f9fbff;
+  --color-link: #5a469f;
+  --color-link-hover: #4d3b8a;
+  --color-link-active: #3f306f;
+  --color-link-visited: #704fa8;
 
   --color-project-sun: #e0b23d;
   --color-project-pink: #cf71ad;
@@ -43,6 +47,7 @@
 
   --color-accent: var(--color-project-violet);
   --color-focus-ring: var(--color-accent);
+  --focus-ring-width: 2px;
 
   --text-weight-regular: 400;
   --text-weight-medium: 500;
@@ -94,12 +99,40 @@ h3 {
 }
 
 a {
-  text-decoration: none;
-  color: var(--color-text-secondary)
+  color: var(--color-link);
+  text-decoration-line: underline;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.16em;
+  text-decoration-skip-ink: auto;
+  transition:
+    color 120ms ease,
+    text-decoration-thickness 120ms ease;
+}
+
+a:visited {
+  color: var(--color-link-visited);
 }
 
 a:hover {
-  color: var(--color-text-primary);
+  color: var(--color-link-hover);
+  text-decoration-thickness: 0.12em;
+}
+
+a:active {
+  color: var(--color-link-active);
+}
+
+a:focus-visible {
+  outline: var(--focus-ring-width) solid var(--color-focus-ring);
+  outline-offset: 2px;
+  border-radius: 0.2rem;
+}
+
+a.button,
+a.project-card-link,
+a.portfolio,
+.nav-list a {
+  text-decoration: none;
 }
 
 .row {
