@@ -3,7 +3,7 @@
 }
 
 .hero {
-  padding-inline: clamp(1.25rem, 5vw, 6rem);
+  padding-inline: var(--layout-gutter-inline);
   display: grid;
   grid-template-columns: 1.25fr 1fr;
   align-items: center;

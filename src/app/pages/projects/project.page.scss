@@ -3,7 +3,7 @@
 }
 
 .project-page {
-  padding: 6rem clamp(1.25rem, 5vw, 6rem) 4rem;
+  padding: 6rem var(--layout-gutter-inline) 4rem;
   display: grid;
   gap: 2rem;
 }

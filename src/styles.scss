@@ -12,6 +12,7 @@
 
 :root {
   --font-family-base: 'Manrope', sans-serif;
+  --layout-gutter-inline: clamp(1.25rem, 5vw, 6rem);
 
   --color-bg-canvas: #f6f2fa;
   --color-bg-canvas-light: #fbf6ff;
@@ -48,6 +49,8 @@
   --color-accent: var(--color-project-violet);
   --color-focus-ring: var(--color-accent);
   --focus-ring-width: 2px;
+  --focus-ring-offset: 2px;
+  --focus-ring-radius: 0.2rem;
 
   --text-weight-regular: 400;
   --text-weight-medium: 500;
@@ -124,8 +127,8 @@ a:active {
 
 a:focus-visible {
   outline: var(--focus-ring-width) solid var(--color-focus-ring);
-  outline-offset: 2px;
-  border-radius: 0.2rem;
+  outline-offset: var(--focus-ring-offset);
+  border-radius: var(--focus-ring-radius);
 }
 
 a.button,

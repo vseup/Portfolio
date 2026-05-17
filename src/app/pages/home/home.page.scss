@@ -3,7 +3,7 @@
 }
 
 .projects {
-  padding-inline: clamp(1.25rem, 5vw, 6rem);
+  padding-inline: var(--layout-gutter-inline);
 }
 
 .projects-header h2,
