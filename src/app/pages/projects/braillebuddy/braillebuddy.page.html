@@ -62,31 +62,10 @@
       translate the research insights into tangible design decisions.
     </p>
   </app-project-section>
-  <div class="post-its">
-    <div class="post-it-1">
-      <p>
-        <b>Robust and appealing form factor.</b> The TUI should be self-contained and easy to use
-        independently — requiring no screens or setup. A durable build, along with both tactile and
-        visual appeal, will make it suitable for blind children while also inviting to sighted
-        peers, fostering inclusion.
-      </p>
-    </div>
-    <div class="post-it-2">
-      <p>
-        <b>Clear physical affordances.</b> Elements should follow standard Braille sizing for
-        accurate recognition, as oversized characters (common in other tools) distort the tactile
-        experience. Beveled corners and clear slot guidance ensure intuitive, error-free
-        interaction.
-      </p>
-    </div>
-    <div class="post-it-3">
-      <p>
-        <b>Modular learning system.</b> The TUI should offer different game modes and a scalable
-        card system, making it flexible, engaging, and expandable for different learners and skill
-        levels.
-      </p>
-    </div>
-  </div>
+  <app-post-its
+    ariaLabel="Key design requirements for Braillebuddy"
+    [notes]="approachNotes"
+  ></app-post-its>
   <app-divider></app-divider>
   <app-project-section
     title="Prototype"

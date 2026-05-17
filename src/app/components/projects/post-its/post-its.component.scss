@@ -1,0 +1,54 @@
+.post-its {
+  display: flex;
+  gap: 3rem;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.post-it {
+  position: relative;
+  width: min(26rem, 100%);
+  aspect-ratio: 1;
+  transition: transform 200ms ease-out;
+  will-change: transform;
+  transform: rotate(var(--base-rotate, 0deg));
+}
+
+.post-it:hover {
+  transform: translateY(-0.4rem) rotate(var(--hover-rotate, 0deg));
+}
+
+.post-it img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  padding: 6rem 4rem;
+  color: var(--color-text-primary);
+}
+
+.label {
+  margin-bottom: 1rem;
+}
+
+.content p {
+  margin: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .post-it {
+    transition: none;
+  }
+
+  .post-it:hover {
+    transform: rotate(var(--base-rotate, 0deg));
+  }
+}

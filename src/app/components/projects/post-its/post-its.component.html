@@ -1,0 +1,17 @@
+<ul class="post-its" [attr.aria-label]="ariaLabel()">
+  @for (note of renderedNotes(); track note.id) {
+    <li
+      class="post-it"
+      [style.--base-rotate]="note.baseRotate"
+      [style.--hover-rotate]="note.hoverRotate"
+    >
+      <img [ngSrc]="note.imageSrc" width="708" height="712" alt="" aria-hidden="true" />
+      <div class="content">
+        <p class="label">
+          <strong>{{ note.label }}</strong>
+        </p>
+        <p>{{ note.text }}</p>
+      </div>
+    </li>
+  }
+</ul>
