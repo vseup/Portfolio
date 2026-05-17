@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { HomeHeroComponent } from '../../components/home/home-hero/home-hero.component';
-import { ProjectCardComponent } from '../../components/home/project-card/project-card.component';
-import { PROJECTS } from '../../constants/projects.constants';
+import { HomeHeroComponent } from '@app/components/home/home-hero/home-hero.component';
+import { ProjectCardComponent } from '@app/components/home/project-card/project-card.component';
+import { PROJECTS } from '@app/constants/projects.constants';
 
 @Component({
   selector: 'app-home-page',

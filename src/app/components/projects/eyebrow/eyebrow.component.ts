@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, input } from '@angular/core';
-import type { ProjectData } from '../../../types/project-data.type';
+import type { ProjectData } from '@app/types/project-data.type';
 
 @Component({
   selector: 'app-eyebrow',

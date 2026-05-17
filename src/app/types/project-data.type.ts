@@ -1,4 +1,4 @@
-import type { ProjectImageData } from './project-image-data.type';
+import type { ProjectImageData } from '@app/types/project-image-data.type';
 
 export interface ProjectData {
   area: string;

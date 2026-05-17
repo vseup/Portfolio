@@ -1,12 +1,12 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { NgOptimizedImage } from '@angular/common';
-import { BRAILLEBUDDY_PROJECT } from '../../../constants/projects.constants';
-import type { ProjectData } from '../../../types/project-data.type';
-import type { ProjectImageData } from '../../../types/project-image-data.type';
 import { RouterLink } from '@angular/router';
-import { ProjectSectionComponent } from '../../../components/projects/project-section/project-section.component';
-import { ProjectHeroComponent } from '../../../components/projects/project-hero/project-hero.component';
-import { DividerComponent } from '../../../components/shared/layout/divider/divider.component';
+import { ProjectHeroComponent } from '@app/components/projects/project-hero/project-hero.component';
+import { ProjectSectionComponent } from '@app/components/projects/project-section/project-section.component';
+import { DividerComponent } from '@app/components/shared/layout/divider/divider.component';
+import { BRAILLEBUDDY_PROJECT } from '@app/constants/projects.constants';
+import type { ProjectData } from '@app/types/project-data.type';
+import type { ProjectImageData } from '@app/types/project-image-data.type';
 
 @Component({
   selector: 'app-braillebuddy-page',
