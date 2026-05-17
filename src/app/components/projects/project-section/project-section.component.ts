@@ -16,6 +16,7 @@ export class ProjectSectionComponent {
   readonly title = input.required<string>();
   readonly headingId = input<string>();
   readonly image = input<ProjectImageData>();
+  readonly imageCaption = input<string | undefined>();
   readonly columns = input('1fr 1fr');
 
   protected readonly resolvedHeadingId = computed(() => {

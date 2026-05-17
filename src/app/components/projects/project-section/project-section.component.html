@@ -5,15 +5,19 @@
       <ng-content></ng-content>
     </div>
   </div>
-  @let sectionImage = image();
-  @if (sectionImage) {
+  @if (image()) {
     <div class="project-section-image">
-      <img
-        [ngSrc]="sectionImage.src"
-        [alt]="sectionImage.alt"
-        [width]="sectionImage.width"
-        [height]="sectionImage.height"
-      />
+      <figure>
+        <img
+          [ngSrc]="image()!.src"
+          [alt]="image()!.alt"
+          [width]="image()!.width"
+          [height]="image()!.height"
+        />
+        @if (imageCaption()) {
+          <figcaption class="image-description">{{ imageCaption() }}</figcaption>
+        }
+      </figure>
     </div>
   }
 </section>

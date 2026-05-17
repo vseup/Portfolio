@@ -71,4 +71,38 @@
     />
   </app-project-section>
   <app-divider></app-divider>
+  <app-project-section title="Key Insights" headingId="insights" columns="1fr">
+    <app-post-its
+      ariaLabel="Key research insights for Playmake"
+      [notes]="insightNotes"
+    ></app-post-its>
+  </app-project-section>
+  <app-divider></app-divider>
+  <app-project-section
+    title="Outcome"
+    headingId="outcome"
+    [image]="outcomeImage"
+    columns="1fr 1fr"
+    imageCaption="Example classroom scenario: students use interview cards to ask questions to Auschwitz survivor Else Baker. Playmake recognizes each card and responds with the matching video segment."
+  >
+    <p>
+      Playmake is a fully functional prototype that makes tangible user interfaces for educational
+      games both accessible and modular. By leveraging smartphone cameras and AprilTag markers, it
+      lets teachers and students create, customize, and play their own learning games. Five example
+      applications (covering math, literacy, history, and more) showcase the system’s technical
+      robustness and its ability to blend hands-on play with real-time digital feedback.
+    </p>
+    <p>
+      Next steps include in-situ trials in diverse classroom settings to assess flexibility across
+      age groups and subjects, gathering iterative feedback from teachers and learners to refine the
+      game-creation workflow, and expanding the marker library for richer, multi-modal interactions.
+    </p>
+    <app-button
+      variant="primary"
+      href="https://www.youtube.com/watch?v=I4oI7I5LZUQ&list=PLl5zP1KQHFtaOuTPCrxjZQwA8AyMBlyKL"
+      target="_blank"
+      rel="noopener"
+      >Playmake Playlist (Youtube)</app-button
+    >
+  </app-project-section>
 </article>
