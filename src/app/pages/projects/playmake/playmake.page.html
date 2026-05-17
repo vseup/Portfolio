@@ -13,14 +13,14 @@
   <app-divider></app-divider>
   <app-project-section title="Overview" headingId="playmake-overview" [image]="heroImage">
     <p>
-      As part of my Master’s in Human-Computer Interaction at LMU Munich, I developed Playmake—a
+      As part of my Master’s in Human-Computer Interaction at LMU Munich, I developed Playmake – a
       system that empowers teachers to create custom interactive educational games using a
       smartphone or tablet alongside low-cost, DIY materials.
     </p>
     <p>
-      The goal is to make classroom learning more engaging, adaptable, and accessible by introducing
-      tangible interaction. Unlike purely digital or analog methods, tangible interaction combines
-      the benefits of both worlds, enabling richer and more intuitive learning experiences.
+      The goal is to make classroom learning more engaging and accessible by introducing tangible
+      interaction. Unlike purely digital or analog methods, tangible interaction combines the
+      benefits of both worlds, enabling richer and more intuitive learning experiences.
     </p>
     <p>
       However, traditional tangible user interfaces are often expensive and technically complex,
@@ -29,9 +29,46 @@
       devices and simple components to create interactive, hands-on learning tools.
     </p>
     <p>
-      This approach allows teachers—without needing technical expertise—to design educational games
-      tailored to their students’ needs, complete with real-time feedback and meaningful physical
-      interaction.
+      This approach allows teachers to design educational games tailored to their students’ needs,
+      complete with real-time feedback and meaningful physical interaction, without needing
+      technical expertise.
     </p>
   </app-project-section>
+  <app-divider></app-divider>
+  <app-project-section title="What I did" headingId="what-i-did" columns="1fr">
+    <div class="what-i-did">
+      <div>
+        <p><b>Research:</b></p>
+        <p>
+          I conducted qualitative interviews with educators across primary, secondary, and special
+          education to identify real classroom needs, pain points with existing tools, and
+          opportunities for integrating game-based learning.
+        </p>
+      </div>
+      <div>
+        <p><b>Concept and Design:</b></p>
+        <p>
+          I conceptualized a tangible interface that extends mobile devices with low-cost physical
+          components. I designed an intuitive app interface for teachers to create and adapt
+          educational games – focusing on accessibility, clarity, and minimal onboarding.
+        </p>
+      </div>
+      <div>
+        <p><b>Prototyping and Development:</b></p>
+        <p>
+          I developed a working prototype using Flutter (for cross-platform mobile development),
+          OpenCV (for computer vision), and AprilTags. I implemented real-time feedback features and
+          ensured the system worked reliably in dynamic classroom environments.
+        </p>
+      </div>
+    </div>
+    <img
+      class="game-img"
+      [ngSrc]="gameImage.src"
+      [alt]="gameImage.alt"
+      [width]="gameImage.width"
+      [height]="gameImage.height"
+    />
+  </app-project-section>
+  <app-divider></app-divider>
 </article>

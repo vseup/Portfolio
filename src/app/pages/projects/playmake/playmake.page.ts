@@ -29,4 +29,10 @@ export class PlaymakePage {
     height: 899,
     alt: 'Two cardboard Playmake prototypes with a phone and tablet displaying eyes, plus loose letter tiles in front.',
   };
+  protected readonly gameImage: ProjectImageData = {
+    src: '/images/projects/playmake/playmake-geoshape.jpg',
+    width: 1280,
+    height: 635,
+    alt: 'Cardboard Playmake prototype with a smartphone interface, number cards, and wooden geometric blocks spilled from small fabric bags.',
+  };
 }

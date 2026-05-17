@@ -1,1 +1,20 @@
 @use '../project.page.scss';
+
+.what-i-did {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.game-img {
+  width: 100%;
+  height: auto;
+  margin-top: 2rem;
+}
+
+@media (max-width: 1024px) {
+  .what-i-did {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+}

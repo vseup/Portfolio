@@ -8,11 +8,15 @@ import type { ProjectImageData } from '@app/types/project-image-data.type';
   templateUrl: './project-section.component.html',
   styleUrl: './project-section.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
+  host: {
+    '[style.--project-section-columns]': 'columns()',
+  },
 })
 export class ProjectSectionComponent {
   readonly title = input.required<string>();
   readonly headingId = input<string>();
   readonly image = input<ProjectImageData>();
+  readonly columns = input('1fr 1fr');
 
   protected readonly resolvedHeadingId = computed(() => {
     const explicitId = this.headingId()?.trim();
