@@ -1,8 +1,8 @@
 <section [attr.aria-labelledby]="headingId()">
   <app-eyebrow [area]="area()" [period]="period()"></app-eyebrow>
   <h1 [id]="headingId()">{{ heading() }}</h1>
-  <p class="lead">{{ subtitle() }}</p>
-  <p class="lead">{{ description() }}</p>
+  <p class="lead default-text">{{ subtitle() }}</p>
+  <p class="lead default-text">{{ description() }}</p>
   <div class="project-tags">
     <app-tags [title]="tagsTitle()" [tags]="tags()"></app-tags>
   </div>

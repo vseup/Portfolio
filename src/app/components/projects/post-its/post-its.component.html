@@ -7,10 +7,10 @@
     >
       <img [ngSrc]="note.imageSrc" width="708" height="712" alt="" aria-hidden="true" />
       <div class="content">
-        <p class="label">
+        <p class="default-text post-it-text post-it-label">
           <strong>{{ note.label }}</strong>
         </p>
-        <p>{{ note.text }}</p>
+        <p class="default-text post-it-text">{{ note.text }}</p>
       </div>
     </li>
   }

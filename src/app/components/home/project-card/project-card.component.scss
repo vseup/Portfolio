@@ -78,23 +78,14 @@
   padding: 1.35rem 1.35rem 1.45rem;
 }
 
-.card-body h3,
-.card-body p {
-  margin: 0;
-}
-
 .card-body h3 {
   margin-top: 0.55rem;
   color: var(--color-text-primary);
   font-size: var(--text-size-3xl);
-  line-height: var(--text-line-height-title);
 }
 
 .card-summary {
   margin-top: 0.85rem;
-  color: var(--color-text-secondary);
-  font-size: var(--text-size-md);
-  line-height: var(--text-line-height-body);
 }
 
 @media (prefers-reduced-motion: reduce) {

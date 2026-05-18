@@ -6,21 +6,13 @@
   padding-inline: var(--layout-gutter-inline);
 }
 
-.projects-header h2,
-.projects-header p {
-  margin: 0;
-}
-
-.projects-header h2 {
-  font-weight: var(--text-weight-extra-bold);
-}
-
 .projects {
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
 
 .projects-header h2 {
+  font-weight: var(--text-weight-extra-bold);
   color: var(--color-text-primary);
   font-size: var(--text-size-4xl);
   line-height: var(--text-line-height-heading);
@@ -29,9 +21,6 @@
 .projects-header p {
   margin-top: 1rem;
   max-width: 50ch;
-  color: var(--color-text-secondary);
-  font-size: var(--text-size-lg);
-  line-height: var(--text-line-height-body);
 }
 
 .project-grid {

@@ -35,8 +35,12 @@
   color: var(--color-text-primary);
 }
 
-.label {
+.post-it-label {
   margin-bottom: 1rem;
+}
+
+.post-it-text {
+  color: var(--color-text-primary);
 }
 
 .content p {

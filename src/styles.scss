@@ -60,17 +60,13 @@
 
   --text-line-height-tight: 1.06;
   --text-line-height-heading: 1.12;
-  --text-line-height-title: 1.2;
-  --text-line-height-solid: 1;
-  --text-line-height-body: 1.35;
-  --text-line-height-default: 1.5;
+  --text-line-height-default: 1.35;
 
-  --text-tracking-tight: -0.02em;
   --text-tracking-wide: 0.02em;
 
   --text-size-xs: 0.85rem;
   --text-size-sm: 0.95rem;
-  --text-size-md: 1.02rem;
+  --text-size-md: 1rem;
   --text-size-lg: 1.125rem;
   --text-size-xl: 1.25rem;
   --text-size-2xl: clamp(1.15rem, 2vw, 1.65rem);
@@ -87,9 +83,6 @@ body {
 
 body {
   font-family: var(--font-family-base);
-  line-height: var(--text-line-height-default);
-  font-size: var(--text-size-md);
-  color: var(--color-text-primary);
   background: var(--color-bg-canvas);
 }
 
@@ -146,4 +139,19 @@ a.portfolio,
 .col {
   display: flex;
   flex-direction: column;
+}
+
+.default-text {
+  color: var(--color-text-secondary);
+  line-height: var(--text-line-height-body);
+  font-weight: var(--text-weight-regular);
+  font-size: var(--text-size-md);
+}
+
+.image-caption {
+  font-style: italic;
+  margin-top: 0.75rem;
+  color: var(--color-text-secondary);
+  font-size: var(--text-size-xs);
+  line-height: var(--text-line-height-default);
 }

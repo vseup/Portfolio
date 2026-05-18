@@ -12,18 +12,12 @@
   border-top: 1px solid var(--color-border-default);
 }
 
-.hero-copy h1,
-.hero-copy p {
-  margin: 0;
-}
-
 .hero-copy h1 {
   max-width: 20ch;
   color: var(--color-text-primary);
   font-size: var(--text-size-5xl);
   font-weight: var(--text-weight-extra-bold);
   line-height: var(--text-line-height-tight);
-  letter-spacing: var(--text-tracking-tight);
 }
 
 .accent {
@@ -33,9 +27,7 @@
 .hero-copy p {
   margin-top: 1.5rem;
   max-width: 64ch;
-  color: var(--color-text-secondary);
   font-size: var(--text-size-lg);
-  line-height: var(--text-line-height-body);
 }
 
 .hero-actions {
