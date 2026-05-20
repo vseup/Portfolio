@@ -3,7 +3,6 @@ import { NgOptimizedImage } from '@angular/common';
 import { RouterLink } from '@angular/router';
 import { ProjectHeroComponent } from '@app/components/projects/project-hero/project-hero.component';
 import { ProjectSectionComponent } from '@app/components/projects/project-section/project-section.component';
-import { ButtonComponent } from '@app/components/shared/button/button.component';
 import { DividerComponent } from '@app/components/shared/layout/divider/divider.component';
 import { PLAYMAKE_PROJECT } from '@app/constants/projects.constants';
 import type { ProjectData } from '@app/types/project-data.type';
@@ -12,6 +11,7 @@ import {
   PostItsComponent,
   type PostItNote,
 } from '@app/components/projects/post-its/post-its.component';
+import { AnchorButtonComponent } from '@app/components/shared/buttons/anchor-button/anchor-button.component';
 
 @Component({
   selector: 'app-playmake-page',
@@ -22,7 +22,7 @@ import {
     ProjectSectionComponent,
     DividerComponent,
     PostItsComponent,
-    ButtonComponent,
+    AnchorButtonComponent,
   ],
   templateUrl: './playmake.page.html',
   styleUrl: './playmake.page.scss',

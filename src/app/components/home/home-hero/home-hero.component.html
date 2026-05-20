@@ -11,10 +11,15 @@
     </p>
 
     <div class="hero-actions">
-      <app-button variant="primary" routerLink="/" fragment="projects">View Projects</app-button>
-      <app-button variant="ghost" href="https://github.com/vseup" target="_blank" rel="noopener">
+      <app-router-button routerLink="/" fragment="projects">View Projects</app-router-button>
+      <app-anchor-button
+        [isSecondary]="true"
+        href="https://github.com/vseup"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         GitHub
-      </app-button>
+      </app-anchor-button>
     </div>
   </div>
 

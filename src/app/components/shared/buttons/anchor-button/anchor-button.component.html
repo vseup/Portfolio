@@ -1,0 +1,10 @@
+<a
+  class="button"
+  [class.button-primary]="!isSecondary()"
+  [class.button-ghost]="isSecondary()"
+  [attr.href]="href() ?? null"
+  [attr.target]="target() ?? null"
+  [attr.rel]="rel() ?? null"
+>
+  <ng-content></ng-content>
+</a>
