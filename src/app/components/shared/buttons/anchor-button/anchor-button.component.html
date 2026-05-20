@@ -5,6 +5,7 @@
   [attr.href]="href() ?? null"
   [attr.target]="target() ?? null"
   [attr.rel]="rel() ?? null"
+  [attr.download]="download() === true ? '' : (download() ?? null)"
 >
   <ng-content></ng-content>
 </a>

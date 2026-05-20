@@ -11,4 +11,5 @@ export class AnchorButtonComponent {
   readonly href = input<string | undefined>(undefined);
   readonly target = input<string | undefined>(undefined);
   readonly rel = input<string | undefined>(undefined);
+  readonly download = input<string | boolean | undefined>(undefined);
 }
