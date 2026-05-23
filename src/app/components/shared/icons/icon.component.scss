@@ -1,0 +1,21 @@
+:host {
+  display: inline-flex;
+  align-items: center;
+  line-height: 1;
+}
+
+@font-face {
+  font-family: 'Material Symbols';
+  font-style: normal;
+  font-weight: 100 700;
+  font-display: block;
+  src: url('/icons/MaterialSymbolsRounded[FILL,GRAD,opsz,wght].woff2') format('woff2');
+}
+
+.icon {
+  display: inline-block;
+  font-family: 'Material Symbols';
+  font-size: 1.5rem;
+  line-height: 1;
+  vertical-align: middle;
+}
