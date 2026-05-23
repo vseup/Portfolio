@@ -12,6 +12,7 @@ import {
   type PostItNote,
 } from '@app/components/projects/post-its/post-its.component';
 import { AnchorButtonComponent } from '@app/components/shared/buttons/anchor-button/anchor-button.component';
+import { IconComponent } from '@app/components/shared/icons/icon.component';
 
 @Component({
   selector: 'app-playmake-page',
@@ -23,6 +24,7 @@ import { AnchorButtonComponent } from '@app/components/shared/buttons/anchor-but
     DividerComponent,
     PostItsComponent,
     AnchorButtonComponent,
+    IconComponent,
   ],
   templateUrl: './playmake.page.html',
   styleUrl: './playmake.page.scss',
