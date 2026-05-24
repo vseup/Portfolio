@@ -18,6 +18,12 @@ export const routes: Routes = [
       import('./pages/projects/playmake/playmake.page.js').then((m) => m.PlaymakePage),
     title: 'Playmake',
   },
+  {
+    path: 'projects/magic-glove',
+    loadComponent: () =>
+      import('./pages/projects/magic-glove/magic-glove.page.js').then((m) => m.MagicGlovePage),
+    title: 'Magic Glove',
+  },
   // Fallback route: redirect unknown URLs to the landing page.
   {
     path: '**',

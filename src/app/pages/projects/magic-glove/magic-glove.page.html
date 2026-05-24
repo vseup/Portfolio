@@ -1,0 +1,121 @@
+<article class="project-page">
+  <a class="back" routerLink="/" fragment="projects"> &larr; back </a>
+  <app-project-hero
+    headingId="magic-glove-hero"
+    [heading]="project.title"
+    [area]="project.area"
+    [period]="project.period"
+    subtitle="Siemens Home Appliances Design Award (2nd place)"
+    description="Concept of a smart kitchen glove that integrates the human intuitively into the network of smart devices, thereby reducing the complexity of the modern kitchen environment."
+    [tagsTitle]="project.title"
+    [tags]="project.tags"
+  ></app-project-hero>
+  <div class="preview-bg">
+    <img
+      [ngSrc]="heroImage.src"
+      [width]="heroImage.width"
+      [height]="heroImage.height"
+      [alt]="heroImage.alt"
+    />
+  </div>
+  <app-project-section title="Challenge" headingId="magic-glove-challenge">
+    <p class="default-text project-text">
+      My team of fellow students and I had the opportunity to take part in the Siemens Home
+      Appliances Design Award. It challenges young designers to envision the future of home living —
+      calling for concepts that combine intelligent technology, cutting-edge design, and intuitive
+      user interaction.
+    </p>
+    <p class="default-text project-text">
+      Within a 3-month design sprint, our task was to rethink the kitchen environment and explore
+      how emerging technologies can improve everyday experiences.
+    </p>
+  </app-project-section>
+  <app-divider></app-divider>
+  <app-project-section title="Approach" headingId="magic-glove-approach" [image]="approachImage">
+    <p class="default-text project-text">
+      To ground our concept in real needs, we interviewed a wide range of people (from kindergarten
+      children to seniors) to understand where the kitchen experience could be improved. These
+      conversations gave us valuable insights into moments of friction, but also unexpected
+      inspiration.
+    </p>
+    <p class="default-text project-text">
+      One of the most memorable ideas came from a group of children who wished they could "do magic
+      in the kitchen." This playful vision sparked the core idea behind Magic Glove: a tool that
+      feels as empowering and intuitive as magic—while solving real-world problems.
+    </p>
+    <p class="default-text project-text">
+      Rather than adding another device to the kitchen, Magic Glove reimagines the hand as the
+      central interface. It enhances human capabilities through cut- and heat-resistant materials,
+      built-in sensors, and an adaptive display. Based on our interviews we consolidated core
+      functions (such as weighing, temperature sensing, timing, and food condition monitoring) into
+      a single wearable object. Through gesture-based control and real-time feedback, the glove
+      allows for uninterrupted cooking while promoting safety, sustainability, and smart assistance.
+    </p>
+  </app-project-section>
+  <img
+    class="img-100"
+    [ngSrc]="approachImage2.src"
+    [alt]="approachImage2.alt"
+    [width]="approachImage2.width"
+    [height]="approachImage2.height"
+  />
+  <app-divider></app-divider>
+  <app-project-section
+    title="Prototyping and Testing"
+    headingId="magic-glove-prototyping"
+    [image]="prototypingImage"
+  >
+    <p class="default-text project-text">
+      To explore the ergonomic and functional aspects of the concept, we began with material
+      studies. This allowed us to evaluate comfort, fit and flexibility.
+    </p>
+    <p class="default-text project-text">
+      With low-fidelity paper prototypes we tested screen visibility and user feedback under real
+      kitchen conditions.
+    </p>
+    <p class="default-text project-text">
+      For the functional prototype, we used flex sensors and an accelerometer to detect hand
+      gestures. A pressure-sensitive sensor was embedded into the palm to test the weighing
+      function. Visual and haptic feedback were tested through LED strips and vibration motors,
+      ensuring communication was clear yet unobtrusive.
+    </p>
+  </app-project-section>
+  <img
+    class="img-100"
+    [ngSrc]="prototypingImage2.src"
+    [alt]="prototypingImage2.alt"
+    [width]="prototypingImage2.width"
+    [height]="prototypingImage2.height"
+  />
+  <app-divider></app-divider>
+  <app-project-section title="Outcome" headingId="magic-glove-outcome" [image]="outcomeImage">
+    <p class="default-text project-text">
+      Magic Glove transforms the human hand, already one of our most precise, sensitive, and
+      versatile tools, into a smart kitchen interface. By enhancing its natural abilities with
+      protective materials, sensors, and gesture control, the glove allows users to interact
+      effortlessly with food and appliances.
+    </p>
+    <p class="default-text project-text">
+      The concept was awarded second place in the Siemens Home Appliances Design Award 2018 for its
+      innovative approach.
+    </p>
+    <p class="default-text project-text">
+      Team: Anja Lietzau, Katja Niggl, Melanie Pfnür, Sabrina Reischl und Verena Pues.
+    </p>
+    <app-anchor-button
+      href="https://www.youtube.com/watch?v=GOKK_XWxph0"
+      target="_blank"
+      rel="noopener"
+      class="youtube-button"
+    >
+      Watch Concept Movie (Youtube)<app-icon name="smart_display" [decorative]="true"> </app-icon>
+    </app-anchor-button>
+  </app-project-section>
+  <img
+    class="img-100"
+    [ngSrc]="outcomeImage2.src"
+    [alt]="outcomeImage2.alt"
+    [width]="outcomeImage2.width"
+    [height]="outcomeImage2.height"
+  />
+</article>

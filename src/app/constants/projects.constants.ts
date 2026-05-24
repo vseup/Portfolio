@@ -56,7 +56,7 @@ export const PROJECTS: ProjectData[] = [
       'Concept of a smart glove that integrates the human intuitively into the network of smart kitchen devices. Siemens Home Appliances Design Award (2nd place).',
     tags: ['Arduino C/C++', 'UX Research', 'Interactive Prototyping'],
     toneClass: 'tone-violet',
-    detailsRoute: '/',
+    detailsRoute: '/projects/magic-glove',
     previewImage: {
       src: '/images/projects/magic-glove/magic-glove-preview.jpg',
       alt: 'Smart gesture-control glove in the foreground and signal markers on connected appliances in the kitchen background.',
@@ -86,6 +86,10 @@ const braillebuddyProject = PROJECTS.find(
 );
 
 const playmakeProject = PROJECTS.find((project) => project.detailsRoute === '/projects/playmake');
+const magicGloveProject = PROJECTS.find(
+  (project) => project.detailsRoute === '/projects/magic-glove',
+);
 
 export const BRAILLEBUDDY_PROJECT = braillebuddyProject!;
 export const PLAYMAKE_PROJECT = playmakeProject!;
+export const MAGIC_GLOVE_PROJECT = magicGloveProject!;
