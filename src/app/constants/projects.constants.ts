@@ -71,7 +71,7 @@ export const PROJECTS: ProjectData[] = [
     summary: 'Concept of a conversional agent that streamlines the early stages of home care.',
     tags: ['UX Design', 'UX Research', 'Prototyping'],
     toneClass: 'tone-mint',
-    detailsRoute: '/',
+    detailsRoute: '/projects/cura',
     previewImage: {
       src: '/images/projects/cura/cura-preview.jpg',
       alt: 'Smartphone screen showing the Cura care-assistant chat interface.',
@@ -84,12 +84,13 @@ export const PROJECTS: ProjectData[] = [
 const braillebuddyProject = PROJECTS.find(
   (project) => project.detailsRoute === '/projects/braillebuddy',
 );
-
 const playmakeProject = PROJECTS.find((project) => project.detailsRoute === '/projects/playmake');
 const magicGloveProject = PROJECTS.find(
   (project) => project.detailsRoute === '/projects/magic-glove',
 );
+const curaProject = PROJECTS.find((project) => project.detailsRoute === '/projects/cura');
 
 export const BRAILLEBUDDY_PROJECT = braillebuddyProject!;
 export const PLAYMAKE_PROJECT = playmakeProject!;
 export const MAGIC_GLOVE_PROJECT = magicGloveProject!;
+export const CURA_PROJECT = curaProject!;

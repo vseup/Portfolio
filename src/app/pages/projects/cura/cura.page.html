@@ -1,0 +1,134 @@
+<article class="project-page">
+  <a class="back" routerLink="/" fragment="projects"> &larr; back </a>
+  <app-project-hero
+    headingId="cura-hero"
+    [heading]="project.title"
+    [area]="project.area"
+    [period]="project.period"
+    subtitle="Strascheg Center for Entrepreneurship"
+    description="Concept of a conversational agent that streamlines the early stages of home care by linking family caregivers with essential contacts and simplifying administrative tasks like paperwork, scheduling, and coordination."
+    [tagsTitle]="project.title"
+    [tags]="project.tags"
+  ></app-project-hero>
+  <app-divider></app-divider>
+  <app-project-section title="Overview" headingId="cura-overview" [image]="overviewImage">
+    <p class="default-text project-text">
+      As part of the interdisciplinary program “Health and Technology”, the University of Applied
+      Sciences Munich partnered with the Strascheg Center for Entrepreneurship (SCE) to bring
+      together design and nursing students. The goal of the initiative was to explore how
+      human-centered technologies could meaningfully improve real-life healthcare challenges.
+    </p>
+    <p class="default-text project-text">
+      Within this context, our team developed Cura, a digital agent designed to assist family
+      members during the initial, often chaotic phase of organizing home care. Cura supports users
+      in managing bureaucracy, submitting applications, finding the right contacts, and
+      understanding next steps. As a conversational interface, it offers structured, personalized
+      guidance — available anytime.
+    </p>
+    <p class="default-text project-text">
+      The project combined user research and iterative prototyping in a real-world entrepreneurial
+      framework.
+    </p>
+  </app-project-section>
+  <app-divider></app-divider>
+  <app-project-section title="Challenge" headingId="cura-challenge">
+    <p class="default-text project-text">
+      When a loved one suddenly requires care, families often face a flood of paperwork, deadlines,
+      and fragmented information. Our interviews with caregivers revealed how time-consuming and
+      emotionally draining this initial phase is.
+    </p>
+    <p class="default-text project-text">
+      Many struggle with long wait times, inconsistent advice, redundant paperwork, and the fear of
+      missing crucial benefits due to lack of clarity. The existing systems, ranging from websites
+      and hotlines to brochures and apps, are often outdated, impersonal, or overwhelming.
+    </p>
+    <p class="default-text project-text">
+      We asked ourselves: What if there was a single, intelligent companion that helped people find
+      their way in a calm, clear, and proactive way?
+    </p>
+  </app-project-section>
+  <ul class="quotes">
+    <li class="quote col">
+      <img
+        [ngSrc]="quoteImage1.src"
+        [width]="quoteImage1.width"
+        [height]="quoteImage1.height"
+        [alt]="quoteImage1.alt"
+      />
+      <p class="default-text quote-text">
+        "Need for long-term care entails endless formalities and appointments to provide evidence
+        and to raise objections."
+      </p>
+    </li>
+    <li class="quote col">
+      <img
+        [ngSrc]="quoteImage2.src"
+        [width]="quoteImage2.width"
+        [height]="quoteImage2.height"
+        [alt]="quoteImage2.alt"
+      />
+      <p class="default-text quote-text">
+        "Family caregivers often lack the time and energy to navigate complex information, so they
+        miss benefits they’re entitled to."
+      </p>
+    </li>
+    <li class="quote col">
+      <img
+        [ngSrc]="quoteImage3.src"
+        [width]="quoteImage3.width"
+        [height]="quoteImage3.height"
+        [alt]="quoteImage3.alt"
+      />
+      <p class="default-text quote-text">
+        "Existing guidance is inadequate: clear, neutral information on how to apply for care
+        allowances and when they apply is hard to find."
+      </p>
+    </li>
+  </ul>
+  <app-divider></app-divider>
+  <app-project-section title="Approach" headingId="cura-approach">
+    <p class="default-text project-text">
+      Through expert and user interviews, we gained deep insight into the workflows, emotional pain
+      points, and real-world barriers caregivers face. Based on these insights, we created personas,
+      a user journey- and stakeholder maps. We identified key opportunities for automation,
+      simplification, and emotional relief.
+    </p>
+    <p class="default-text project-text">
+      We then designed the UI for selected use cases and implemented a clickable prototype to test
+      and communicate the interaction flow. In addition, we produced a concept movie to present the
+      vision clearly and persuade potential stakeholders of the idea’s value.
+    </p>
+  </app-project-section>
+  <img
+    class="img-100"
+    [ngSrc]="screensImage.src"
+    [alt]="screensImage.alt"
+    [width]="screensImage.width"
+    [height]="screensImage.height"
+  />
+  <app-divider></app-divider>
+  <app-project-section title="Outcome" headingId="cura-outcome">
+    <p class="default-text project-text">
+      Cura doesn’t just explain what to do, it acts. It fills out forms using available data, sends
+      reminders, and archives all documents in one place. The user stays in control but delegates
+      effort.
+    </p>
+    <p class="default-text project-text">
+      Thereby, it translates a complex bureaucratic system into a calm, guided process. It saves
+      users time, reduces stress, and ensures access to services they might otherwise miss.
+      Insurance providers and healthcare services benefit from cleaner submissions and fewer
+      repeated questions, freeing up time for real human consultation.
+    </p>
+    <p class="default-text project-text">
+      Team: Katja Niggl, Melanie Pfnür, Anna Lieb und Verena Pues.
+    </p>
+    <app-anchor-button
+      href="https://www.youtube.com/watch?v=tu60skA6FA4"
+      target="_blank"
+      rel="noopener"
+      class="youtube-button"
+    >
+      Watch Concept Movie (Youtube)<app-icon name="smart_display" [decorative]="true"> </app-icon>
+    </app-anchor-button>
+  </app-project-section>
+</article>

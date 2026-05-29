@@ -1,0 +1,36 @@
+@use '../project.page.scss';
+
+:host {
+  display: block;
+}
+
+.quotes {
+  display: flex;
+  gap: 3rem;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.quote {
+  aspect-ratio: 1;
+  width: min(24rem, 100%);
+  gap: 1rem;
+  align-items: center;
+}
+
+.quote img {
+  width: 80%;
+  height: 80%;
+}
+
+.quote-text {
+  text-align: center;
+  font-style: italic;
+}
+
+.youtube-button {
+  margin-top: 0.5rem;
+}

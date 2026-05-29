@@ -24,6 +24,11 @@ export const routes: Routes = [
       import('./pages/projects/magic-glove/magic-glove.page.js').then((m) => m.MagicGlovePage),
     title: 'Magic Glove',
   },
+  {
+    path: 'projects/cura',
+    loadComponent: () => import('./pages/projects/cura/cura.page.js').then((m) => m.CuraPage),
+    title: 'Cura',
+  },
   // Fallback route: redirect unknown URLs to the landing page.
   {
     path: '**',
