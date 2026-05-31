@@ -7,6 +7,12 @@ export const routes: Routes = [
     title: 'Home',
   },
   {
+    path: 'projects/cathouse',
+    loadComponent: () =>
+      import('./pages/projects/cathouse/cathouse.page.js').then((m) => m.CathousePage),
+    title: 'Cathouse',
+  },
+  {
     path: 'projects/braillebuddy',
     loadComponent: () =>
       import('./pages/projects/braillebuddy/braillebuddy.page.js').then((m) => m.BraillebuddyPage),

@@ -1,0 +1,90 @@
+<article class="project-page">
+  <a class="back" routerLink="/" fragment="projects"> &larr; back </a>
+  <app-project-hero
+    headingId="cathouse-hero"
+    [heading]="project.title"
+    [area]="project.area"
+    [period]="project.period"
+    subtitle="Personal Project"
+    description="A lightweight donation platform where each virtual cat represents a real contribution to the Tierheim Starnberg cat house rebuild."
+    [tagsTitle]="project.title"
+    [tags]="project.tags"
+  ></app-project-hero>
+
+  <app-divider></app-divider>
+
+  <app-project-section title="Overview" headingId="cathouse-overview" [image]="catImage">
+    <p class="default-text project-text">
+      Cathouse is a small charity web app I built to support the Tierheim Starnberg "new cat house"
+      fundraising campaign. The shelter needs to build a new cat house because the current
+      facilities no longer meet long-term operational needs.
+    </p>
+    <p class="default-text project-text">
+      The core idea of the app is simple: people donate through official shelter channels and create
+      a virtual cat in the app as a visible contribution. This turns abstract fundraising progress
+      into a shared, playful visual story.
+    </p>
+  </app-project-section>
+
+  <app-divider></app-divider>
+
+  <app-project-section title="Approach" headingId="cathouse-approach" [image]="catAnimationImage">
+    <p class="default-text project-text">
+      My goal was to create a motivating interface that increases participation. I designed and
+      implemented the project end-to-end, including UX concept, frontend, backend/API, data model,
+      and deployment.
+    </p>
+    <p class="default-text project-text">
+      For the cat animations, I built on a
+      <a href="https://seethingswarm.itch.io/catset" target="_blank" rel="noopener noreferrer"
+        >starter kit</a
+      >
+      and extended it with additional coat variations and animation states to create a more diverse,
+      lively cat population.
+    </p>
+    <p class="default-text project-text">
+      For implementation, I chose a full-stack TypeScript setup to keep data contracts consistent
+      across the project. SvelteKit was a good fit for a lightweight UI, while NestJS provided a
+      clear backend structure. PostgreSQL with Prisma offered a reliable relational model, plus
+      predictable migrations. Docker and a small Makefile workflow made local setup and deployment
+      reproducible.
+    </p>
+  </app-project-section>
+
+  <app-divider></app-divider>
+
+  <img
+    class="img-100"
+    [ngSrc]="screensImage.src"
+    [alt]="screensImage.alt"
+    [width]="screensImage.width"
+    [height]="screensImage.height"
+  />
+
+  <app-divider></app-divider>
+
+  <app-project-section title="Outcome" headingId="cathouse-outcome" [image]="cathouseImage">
+    <p class="default-text project-text">
+      The app collected more than 1,000 EUR to contribute to the estimated total project cost of
+      1,135,000 EUR. Around 30 virtual cats roam the screen as playful, memorable symbols of
+      participation.
+    </p>
+    <div class="outcome-actions">
+      <app-anchor-button
+        href="https://cats.verenapues.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Visit Live Project
+      </app-anchor-button>
+      <app-anchor-button
+        href="https://github.com/vseup/cathouse"
+        target="_blank"
+        rel="noopener noreferrer"
+        [isSecondary]="true"
+      >
+        View Source on GitHub
+      </app-anchor-button>
+    </div>
+  </app-project-section>
+</article>

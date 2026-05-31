@@ -1,0 +1,12 @@
+@use '../project.page.scss';
+
+:host {
+  display: block;
+}
+
+.outcome-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
