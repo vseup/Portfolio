@@ -2,7 +2,10 @@
   <div class="hero-copy">
     <h1 id="home-title">
       Hi, I'm Verena -
-      <span class="accent">and I'm happy you came here</span>
+      <span class="accent" aria-hidden="true">
+        {{ typedPhrase() }}<span class="type-cursor" aria-hidden="true"></span>
+      </span>
+      <span class="sr-only" aria-live="polite">{{ currentPhrase() }}</span>
     </h1>
 
     <p class="default-text">
