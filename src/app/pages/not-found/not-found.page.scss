@@ -1,0 +1,37 @@
+:host {
+  display: block;
+}
+
+.not-found-page {
+  padding: 6rem var(--layout-gutter-inline) 4rem;
+}
+
+.content {
+  max-width: 56ch;
+}
+
+.code {
+  margin: 0;
+  color: var(--color-text-secondary);
+  font-size: var(--text-size-xl);
+  font-weight: var(--text-weight-semibold);
+  letter-spacing: var(--text-tracking-wide);
+}
+
+h1 {
+  margin-top: 0.5rem;
+  color: var(--color-text-primary);
+  font-size: var(--text-size-4xl);
+  line-height: var(--text-line-height-heading);
+}
+
+p {
+  margin-top: 1rem;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
