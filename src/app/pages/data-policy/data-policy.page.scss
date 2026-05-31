@@ -1,0 +1,62 @@
+:host {
+  display: block;
+}
+
+.legal-page {
+  padding: 6rem var(--layout-gutter-inline) 4rem;
+}
+
+.limit {
+  max-width: 76ch;
+}
+
+h1,
+h3,
+h4,
+b {
+  color: var(--color-text-primary);
+}
+
+h1 {
+  margin-bottom: 1.5rem;
+  font-size: var(--text-size-3xl);
+  line-height: var(--text-line-height-heading);
+}
+
+h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: var(--text-size-xl);
+}
+
+h4 {
+  margin: 0;
+  font-size: var(--text-size-lg);
+}
+
+p,
+li {
+  color: var(--color-text-secondary);
+  line-height: var(--text-line-height-default);
+}
+
+p {
+  margin-top: 0.75rem;
+}
+
+ul {
+  margin: 0.75rem 0 0;
+  padding-left: 1.25rem;
+}
+
+li + li {
+  margin-top: 0.5rem;
+}
+
+.spacer-16 {
+  height: 1rem;
+}
+
+.spacer-32 {
+  height: 2rem;
+}

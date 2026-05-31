@@ -7,6 +7,17 @@ export const routes: Routes = [
     title: 'Home',
   },
   {
+    path: 'imprint',
+    loadComponent: () => import('./pages/imprint/imprint.page.js').then((m) => m.ImprintPage),
+    title: 'Imprint',
+  },
+  {
+    path: 'data-policy',
+    loadComponent: () =>
+      import('./pages/data-policy/data-policy.page.js').then((m) => m.DataPolicyPage),
+    title: 'Data Policy',
+  },
+  {
     path: 'projects/cathouse',
     loadComponent: () =>
       import('./pages/projects/cathouse/cathouse.page.js').then((m) => m.CathousePage),

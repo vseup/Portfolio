@@ -1,0 +1,41 @@
+:host {
+  display: block;
+}
+
+.legal-page {
+  padding: 6rem var(--layout-gutter-inline) 4rem;
+}
+
+.limit {
+  max-width: 72ch;
+}
+
+h1 {
+  margin-bottom: 1.5rem;
+  color: var(--color-text-primary);
+  font-size: var(--text-size-3xl);
+  line-height: var(--text-line-height-heading);
+}
+
+b {
+  color: var(--color-text-primary);
+}
+
+p {
+  margin-top: 0.75rem;
+  color: var(--color-text-secondary);
+  line-height: var(--text-line-height-default);
+}
+
+.lead {
+  margin-top: 0;
+  color: var(--color-text-primary);
+}
+
+.spacer-16 {
+  height: 1rem;
+}
+
+.spacer-32 {
+  height: 2rem;
+}
