@@ -7,6 +7,11 @@ export const routes: Routes = [
     title: 'Home',
   },
   {
+    path: 'about',
+    loadComponent: () => import('./pages/about/about.page.js').then((m) => m.AboutPage),
+    title: 'About',
+  },
+  {
     path: 'imprint',
     loadComponent: () => import('./pages/imprint/imprint.page.js').then((m) => m.ImprintPage),
     title: 'Imprint',

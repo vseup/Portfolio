@@ -1,0 +1,49 @@
+:host {
+  display: block;
+}
+
+.about-page {
+  padding: 6rem var(--layout-gutter-inline) 4rem;
+}
+
+.about-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: 2rem;
+  align-items: start;
+}
+
+.about-photo {
+  margin: 0;
+}
+
+.about-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+}
+
+.about-header h1 {
+  font-weight: var(--text-weight-extra-bold);
+  color: var(--color-text-primary);
+  font-size: var(--text-size-4xl);
+  line-height: var(--text-line-height-heading);
+}
+
+.about-header p,
+.about-text {
+  margin-top: 1rem;
+  max-width: 66ch;
+}
+
+@media (max-width: 680px) {
+  .about-page {
+    padding-top: 5.5rem;
+    padding-bottom: 3rem;
+  }
+
+  .about-layout {
+    grid-template-columns: 1fr;
+  }
+}
