@@ -31,30 +31,30 @@ export class CuraPage {
     src: '/images/projects/cura/cura-overview.png',
     width: 731,
     height: 736,
-    alt: 'TODO',
+    alt: 'Illustration of the Cura chatbot on a phone, surrounded by care-related tasks like appointments, forms, and support contacts.',
   };
   protected readonly quoteImage1: ProjectImageData = {
     src: '/images/projects/cura/cura-problem-01.png',
     width: 850,
     height: 849,
-    alt: 'TODO',
+    alt: 'Illustration of a caregiver overwhelmed by a large stack of documents and deadlines.',
   };
   protected readonly quoteImage2: ProjectImageData = {
     src: '/images/projects/cura/cura-problem-02.png',
     width: 850,
     height: 849,
-    alt: 'TODO',
+    alt: 'Illustration of an overflowing paper basket representing excessive administrative paperwork.',
   };
   protected readonly quoteImage3: ProjectImageData = {
     src: '/images/projects/cura/cura-problem-03.png',
     width: 850,
     height: 849,
-    alt: 'TODO',
+    alt: 'Illustration of a caregiver facing a confusing maze that symbolizes fragmented care information.',
   };
   protected readonly screensImage: ProjectImageData = {
     src: '/images/projects/cura/cura-screens.png',
     width: 1712,
     height: 786,
-    alt: 'TODO',
+    alt: 'Mobile app mockups showing Cura conversation flows for guidance, document handling, contact matching, and appointment coordination.',
   };
 }
