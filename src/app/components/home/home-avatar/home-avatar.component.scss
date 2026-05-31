@@ -6,6 +6,7 @@
   width: min(30rem, 100%);
   aspect-ratio: 1;
   position: relative;
+  overflow: hidden;
 }
 
 .avatar img {
@@ -15,15 +16,43 @@
   display: block;
 }
 
+.avatar-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  transform: scale(1);
+  transition: transform 220ms ease-out;
+}
+
+.avatar-foreground {
+  position: relative;
+  z-index: 1;
+}
+
+.avatar:hover .bg-2 {
+  transform: scale(1.06);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .avatar-bg {
+    transition: none;
+  }
+
+  .avatar:hover .bg-2 {
+    transform: scale(1);
+  }
+}
+
 .avatar-eyes {
   position: absolute;
   inset: 0;
+  z-index: 2;
   pointer-events: none;
 }
 
 .eye {
   --eye-size: 12.15%;
-  --pupil-size: 28%;
+  --pupil-size: 22%;
   --eye-shape-horizontal: 50%;
   --eye-shape-vertical: 53%;
 

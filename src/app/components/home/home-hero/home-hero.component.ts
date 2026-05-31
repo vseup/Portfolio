@@ -20,7 +20,7 @@ import { RouterButtonComponent } from '@app/components/shared/buttons/router-but
 })
 export class HomeHeroComponent implements OnInit, OnDestroy {
   private readonly typewriterPhrases = [
-    'software engineer with a design background',
+    'software engineer with a background in design',
     'an introverted cat lady',
     "and I'm happy you came here",
   ] as const;
