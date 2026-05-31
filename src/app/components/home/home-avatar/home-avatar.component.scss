@@ -1,0 +1,63 @@
+:host {
+  display: block;
+}
+
+.avatar {
+  width: min(30rem, 100%);
+  aspect-ratio: 1;
+  position: relative;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.avatar-eyes {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.eye {
+  --eye-size: 12.15%;
+  --pupil-size: 28%;
+  --eye-shape-horizontal: 50%;
+  --eye-shape-vertical: 53%;
+
+  position: absolute;
+  width: var(--eye-size);
+  aspect-ratio: 1;
+  border-radius: var(--eye-shape-horizontal) / var(--eye-shape-vertical);
+  background: white;
+  display: grid;
+  place-items: center;
+}
+
+.eye-left {
+  left: 39.75%;
+  top: 37%;
+}
+
+.eye-right {
+  left: 52.15%;
+  top: 37%;
+}
+
+.pupil {
+  width: var(--pupil-size);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: #000;
+  transform: translate(0, 0);
+  transition: transform 110ms ease-out;
+}
+
+@media (max-width: 1024px) {
+  .avatar {
+    width: min(500px, 100%);
+    margin: auto;
+  }
+}
