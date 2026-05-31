@@ -40,6 +40,11 @@ ng generate --help
 
 ```bash
 ng build
+
+```
+
+```bash
+npm run build -- --configuration production --output-mode static
 ```
 
 This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
