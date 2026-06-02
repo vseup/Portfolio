@@ -25,6 +25,9 @@ export class HomeAvatarComponent implements OnInit, OnDestroy {
   private readonly maxPupilOffsetFactor = 0.016;
   private readonly platformId = inject(PLATFORM_ID);
   private readonly avatarRef = viewChild<ElementRef<HTMLElement>>('avatar');
+  private readonly handleWindowPointerDown = (event: PointerEvent): void => {
+    this.updatePupilOffset(event);
+  };
   private readonly handleWindowPointerMove = (event: PointerEvent): void => {
     this.updatePupilOffset(event);
   };
@@ -46,6 +49,7 @@ export class HomeAvatarComponent implements OnInit, OnDestroy {
     }
 
     window.addEventListener('pointermove', this.handleWindowPointerMove, { passive: true });
+    window.addEventListener('pointerdown', this.handleWindowPointerDown, { passive: true });
     window.addEventListener('pointerleave', this.handleWindowPointerLeave, { passive: true });
   }
 
@@ -55,6 +59,7 @@ export class HomeAvatarComponent implements OnInit, OnDestroy {
     }
 
     window.removeEventListener('pointermove', this.handleWindowPointerMove);
+    window.removeEventListener('pointerdown', this.handleWindowPointerDown);
     window.removeEventListener('pointerleave', this.handleWindowPointerLeave);
   }
 
