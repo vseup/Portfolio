@@ -46,10 +46,6 @@ export class PlaymakePage {
       label: 'Tactile interaction supports learning.',
       text: 'Physical play benefits different learning styles and encourages deeper involvement.',
     },
-    {
-      label: 'Teacher empowerment is critical.',
-      text: 'Simple, flexible creation tools reduce preperation time and let teachers focus on teaching – not tech.',
-    },
   ] as const;
 
   protected readonly heroImage: ProjectImageData = {
