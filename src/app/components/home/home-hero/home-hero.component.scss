@@ -5,7 +5,7 @@
 .hero {
   padding-inline: var(--layout-gutter-inline);
   display: grid;
-  grid-template-columns: 1.25fr 1fr;
+  grid-template-columns: 1.27fr 1fr;
   align-items: center;
   gap: 2rem;
   min-height: 48rem;
@@ -18,8 +18,8 @@
   color: var(--color-text-primary);
   font-size: var(--text-size-5xl);
   font-weight: var(--text-weight-extra-bold);
-  line-height: var(--text-line-height-tight);
-  height: calc(var(--text-size-5xl) * var(--text-line-height-tight) * var(--hero-title-lines));
+  line-height: var(--text-line-height-heading);
+  height: calc(var(--text-size-5xl) * var(--text-line-height-heading) * var(--hero-title-lines));
 }
 
 .accent {
