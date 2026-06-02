@@ -13,7 +13,7 @@
 }
 
 .hero-copy h1 {
-  --hero-title-lines: 3;
+  --hero-title-lines: 2;
   max-width: 20ch;
   color: var(--color-text-primary);
   font-size: var(--text-size-5xl);
@@ -81,7 +81,7 @@
 
 @media (max-width: 1680px) {
   .hero-copy h1 {
-    --hero-title-lines: 4;
+    --hero-title-lines: 3;
   }
 }
 
@@ -109,12 +109,12 @@
 
 @media (max-width: 650px) {
   .hero-copy h1 {
-    --hero-title-lines: 3;
+    --hero-title-lines: 2;
   }
 }
 
 @media (max-width: 450px) {
   .hero-copy h1 {
-    --hero-title-lines: 4;
+    --hero-title-lines: 3;
   }
 }
