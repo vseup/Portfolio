@@ -9,7 +9,10 @@
           routerLink="/"
           fragment="projects"
           routerLinkActive="is-active"
-          [routerLinkActiveOptions]="{ exact: true }"
+          [routerLinkActiveOptions]="{
+            exact: true,
+            fragment: 'exact',
+          }"
           ariaCurrentWhenActive="page"
         >
           Projects
