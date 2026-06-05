@@ -4,10 +4,27 @@
   <nav aria-label="Primary">
     <ul class="nav-list">
       <li>
-        <a routerLink="/" fragment="projects"> Projects </a>
+        <a
+          class="nav-link"
+          routerLink="/"
+          fragment="projects"
+          routerLinkActive="is-active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          ariaCurrentWhenActive="page"
+        >
+          Projects
+        </a>
       </li>
       <li>
-        <a routerLink="/about"> About </a>
+        <a
+          class="nav-link"
+          routerLink="/about"
+          routerLinkActive="is-active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          ariaCurrentWhenActive="page"
+        >
+          About
+        </a>
       </li>
     </ul>
   </nav>

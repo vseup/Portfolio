@@ -26,17 +26,27 @@
   gap: 2rem;
 }
 
-.nav-list a {
+.nav-link {
+  padding: 0.2rem 0rem;
   color: var(--color-text-secondary);
   text-decoration: none;
   font-weight: var(--text-weight-medium);
+  border-bottom: 0.16rem solid transparent;
+  transition:
+    color 120ms ease,
+    border-color 120ms ease;
 }
 
-.nav-list a:hover {
+.nav-link:hover {
   color: var(--color-text-primary);
 }
 
-.nav-list a:focus-visible,
+.nav-link.is-active {
+  color: var(--color-text-primary);
+  border-bottom-color: var(--color-text-primary);
+}
+
+.nav-link:focus-visible,
 .portfolio:focus-visible {
   outline: var(--focus-ring-width) solid var(--color-focus-ring);
   outline-offset: var(--focus-ring-offset);
